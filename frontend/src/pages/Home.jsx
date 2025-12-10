@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, BookOpen, Award, Scale } from 'lucide-react';
+import { ArrowRight, BookOpen, Award, Scale, Gavel, BookMarked } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const containerVariants = {
@@ -30,14 +30,20 @@ const Home = () => {
             initial="hidden"
             animate="visible"
         >
-            {/* 3D Decorative Blur */}
-            {/* Hero Section */}
+
+            {/* Floating Legal Icons */}
+            <div className="absolute inset-0 overflow-hidden pointer-events-none -z-5">
+                <Scale className="absolute top-20 left-10 text-blue-200 opacity-20 float" size={80} style={{ animationDelay: '0s' }} />
+                <Gavel className="absolute top-40 right-20 text-blue-300 opacity-15 float" size={60} style={{ animationDelay: '2s' }} />
+                <BookMarked className="absolute bottom-40 left-1/4 text-blue-200 opacity-20 float" size={70} style={{ animationDelay: '4s' }} />
+                <Scale className="absolute bottom-20 right-1/3 text-blue-300 opacity-15 float" size={50} style={{ animationDelay: '1s' }} />
+            </div>
 
             {/* Hero Section */}
             <div className="text-center pt-8 pb-16 px-4 relative z-10">
                 <motion.div
                     variants={itemVariants}
-                    className="inline-flex items-center justify-center p-1.5 pr-4 bg-blue-50 border border-blue-100 rounded-full mb-8 shadow-sm"
+                    className="inline-flex items-center justify-center p-1.5 pr-4 bg-blue-50 border border-blue-100 rounded-full mb-8 shadow-sm mx-auto"
                 >
                     <span className="px-3 py-1 bg-blue-600 text-white rounded-full text-xs font-bold">New</span>
                     <span className="ml-3 text-sm text-slate-600 font-medium tracking-wide">BNS 2023 Guidelines Added</span>
@@ -48,7 +54,7 @@ const Home = () => {
                     className="text-6xl md:text-8xl font-sans font-black text-slate-900 tracking-tighter mb-8 leading-[1.1]"
                 >
                     Master the <br />
-                    <span className="text-blue-600 relative inline-block">
+                    <span className="text-blue-600 relative inline-block text-3d-blue">
                         Laws of the Land
                     </span>
                 </motion.h1>
@@ -68,7 +74,7 @@ const Home = () => {
                         <motion.button
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            className="w-full px-10 py-5 bg-blue-600 text-white font-bold text-lg rounded-2xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2 group"
+                            className="w-full px-10 py-5 bg-blue-600 text-white font-bold text-lg rounded-2xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2 group pulse-glow"
                         >
                             <span>Start Quiz</span>
                             <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />

@@ -9,6 +9,7 @@ const PORT = process.env.PORT || 5000;
 const JWT_SECRET = process.env.JWT_SECRET || 'your-secret-key-change-in-production';
 
 const path = require('path');
+const mockLegalAI = require('./mock-legal-ai');
 
 // Middleware
 app.use(cors());
@@ -280,6 +281,33 @@ app.post('/api/feedback', (req, res) => {
     res.status(500).json({ message: 'Failed to save feedback' });
   }
 });
+
+// AI Chat endpoint
+app.post('/api/chat', async (req, res) => {
+  try {
+    const { message, chatHistory } = req.body;
+
+    if (!message) {
+      return res.status(400).json({ message: 'Message is required' });
+    }
+
+    // Send message to Mock Legal AI
+    const response = await mockLegalAI.sendMessage(message);
+
+    res.json({
+      message: 'Success',
+      response: response,
+      timestamp: new Date().toISOString()
+    });
+  } catch (error) {
+    console.error('Chat API Error:', error);
+    res.status(500).json({
+      message: error.message || 'Failed to process chat message',
+      error: process.env.NODE_ENV === 'development' ? error.message : undefined
+    });
+  }
+});
+
 
 // Legacy submit quiz (for non-logged in users)
 app.post('/api/submit-quiz', (req, res) => {

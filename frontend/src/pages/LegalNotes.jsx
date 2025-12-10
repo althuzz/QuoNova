@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { FileText, Download, ChevronDown, Lock } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import FloatingLegalIcons from '../components/FloatingLegalIcons';
 import { API_URL } from '../config';
 
 const LegalNotes = () => {
@@ -38,6 +39,7 @@ const LegalNotes = () => {
             animate={{ opacity: 1 }}
             className="max-w-4xl mx-auto"
         >
+            <FloatingLegalIcons />
             <div className="mb-12 text-center relative">
                 <h1 className="text-5xl font-sans font-black mb-4 text-slate-900 tracking-tight">Legal Notes <span className="text-blue-600">Repository</span></h1>
                 <p className="text-slate-500 text-lg font-light">Curated jurisprudence materials organized by Semester</p>

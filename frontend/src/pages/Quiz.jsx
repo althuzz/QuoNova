@@ -3,6 +3,7 @@ import { RotateCw, Award } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { API_URL } from '../config';
+import FloatingLegalIcons from '../components/FloatingLegalIcons';
 
 const Quiz = () => {
     const navigate = useNavigate();
@@ -86,11 +87,14 @@ const Quiz = () => {
 
     if (loading) {
         return (
-            <div className="flex flex-col items-center justify-center min-h-[50vh]">
-                <div className="animate-spin text-blue-600 mb-4 rounded-full">
-                    <RotateCw size={40} />
+            <div className="max-w-4xl mx-auto relative">
+                <FloatingLegalIcons />
+                <div className="flex flex-col items-center justify-center min-h-[50vh]">
+                    <div className="animate-spin text-blue-600 mb-4 rounded-full">
+                        <RotateCw size={40} />
+                    </div>
+                    <p className="text-slate-500 font-medium tracking-widest text-sm uppercase">Loading Questions...</p>
                 </div>
-                <p className="text-slate-500 font-medium tracking-widest text-sm uppercase">Loading Questions...</p>
             </div>
         );
     }

@@ -7,6 +7,7 @@ import Leaderboard from './pages/Leaderboard';
 import LegalNotes from './pages/LegalNotes';
 import Feedback from './pages/Feedback';
 import AuthPage from './pages/AuthPage';
+import LegalAI from './pages/LegalAI';
 import './App.css'; // Retain for any lingering custom styles or reset them
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="notes" element={<LegalNotes />} />
           <Route path="feedback" element={<Feedback />} />
           <Route path="auth" element={<AuthPage />} />
+          <Route path="legal-ai" element={<LegalAI />} />
         </Route>
       </Routes>
     </BrowserRouter>

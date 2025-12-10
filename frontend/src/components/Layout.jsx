@@ -57,8 +57,10 @@ const Layout = () => {
 
                         {/* Desktop Navigation */}
                         <div className="hidden md:flex items-center gap-8">
+                            <Link to="/" className="text-slate-600 font-medium hover:text-blue-600 transition-colors text-sm uppercase tracking-wide">Home</Link>
                             <Link to="/quiz" className="text-slate-600 font-medium hover:text-blue-600 transition-colors text-sm uppercase tracking-wide">Quiz</Link>
                             <Link to="/notes" className="text-slate-600 font-medium hover:text-blue-600 transition-colors text-sm uppercase tracking-wide">Notes</Link>
+                            <Link to="/legal-ai" className="text-slate-600 font-medium hover:text-blue-600 transition-colors text-sm uppercase tracking-wide">Law AI</Link>
                             <Link to="/leaderboard" className="text-slate-600 font-medium hover:text-blue-600 transition-colors text-sm uppercase tracking-wide">Rankings</Link>
                             <Link to="/feedback" className="text-slate-600 font-medium hover:text-blue-600 transition-colors text-sm uppercase tracking-wide">Feedback</Link>
 
@@ -108,8 +110,10 @@ const Layout = () => {
                             className="md:hidden bg-white/95 backdrop-blur-xl border-b border-slate-200 overflow-hidden"
                         >
                             <div className="px-4 pt-2 pb-6 space-y-2">
+                                <Link to="/" className="block px-4 py-3 rounded-lg text-white hover:bg-white/5 hover:text-neo-green border border-transparent hover:border-white/5 transition-all" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
                                 <Link to="/quiz" className="block px-4 py-3 rounded-lg text-white hover:bg-white/5 hover:text-neo-green border border-transparent hover:border-white/5 transition-all" onClick={() => setIsMobileMenuOpen(false)}>Quiz</Link>
                                 <Link to="/notes" className="block px-4 py-3 rounded-lg text-white hover:bg-white/5 hover:text-neo-green border border-transparent hover:border-white/5 transition-all" onClick={() => setIsMobileMenuOpen(false)}>Legal Notes</Link>
+                                <Link to="/legal-ai" className="block px-4 py-3 rounded-lg text-white hover:bg-white/5 hover:text-neo-green border border-transparent hover:border-white/5 transition-all" onClick={() => setIsMobileMenuOpen(false)}>Law AI</Link>
                                 <Link to="/leaderboard" className="block px-4 py-3 rounded-lg text-white hover:bg-white/5 hover:text-neo-green border border-transparent hover:border-white/5 transition-all" onClick={() => setIsMobileMenuOpen(false)}>Leaderboard</Link>
                                 <Link to="/feedback" className="block px-4 py-3 rounded-lg text-white hover:bg-white/5 hover:text-neo-green border border-transparent hover:border-white/5 transition-all" onClick={() => setIsMobileMenuOpen(false)}>Feedback</Link>
                                 {user ? (

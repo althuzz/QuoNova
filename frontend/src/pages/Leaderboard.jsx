@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Trophy, Crown, Medal } from 'lucide-react';
 import { motion } from 'framer-motion';
+import FloatingLegalIcons from '../components/FloatingLegalIcons';
 import { API_URL } from '../config';
 
 const Leaderboard = () => {
@@ -37,6 +38,7 @@ const Leaderboard = () => {
             animate={{ opacity: 1 }}
             className="max-w-3xl mx-auto"
         >
+            <FloatingLegalIcons />
             <div className="text-center mb-12 relative">
                 <motion.div
                     initial={{ scale: 0 }}

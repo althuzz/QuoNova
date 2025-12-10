@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Send, CheckCircle } from 'lucide-react';
 import { motion } from 'framer-motion';
+import FloatingLegalIcons from '../components/FloatingLegalIcons';
 import { API_URL } from '../config';
 
 const Feedback = () => {
@@ -46,6 +47,7 @@ const Feedback = () => {
                 animate={{ opacity: 1, scale: 1 }}
                 className="max-w-lg mx-auto py-24 text-center relative"
             >
+                <FloatingLegalIcons />
                 <div className="w-24 h-24 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-8 text-green-600">
                     <CheckCircle size={48} />
                 </div>
