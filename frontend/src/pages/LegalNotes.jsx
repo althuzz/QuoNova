@@ -41,12 +41,12 @@ const LegalNotes = () => {
         >
             <FloatingLegalIcons />
             <div className="mb-12 text-center relative">
-                <h1 className="text-5xl font-sans font-black mb-4 text-slate-900 tracking-tight">Legal Notes <span className="text-blue-600">Repository</span></h1>
-                <p className="text-slate-500 text-lg font-light">Curated jurisprudence materials organized by Semester</p>
+                <h1 className="text-5xl font-sans font-black mb-4 text-slate-900 tracking-tight">Legal Notes <span className="text-warm-brown-500">Repository</span></h1>
+                <p className="text-warm-brown-600 text-lg font-light">Curated jurisprudence materials organized by Semester</p>
             </div>
 
             {loading ? (
-                <div className="text-center py-20 text-blue-600 animate-pulse tracking-widest uppercase text-sm">Loading library...</div>
+                <div className="text-center py-20 text-slate-900 animate-pulse tracking-widest uppercase text-sm">Loading library...</div>
             ) : (
                 <div className="space-y-6">
                     {semesters.map((sem) => (
@@ -74,7 +74,7 @@ const LegalNotes = () => {
                                     <motion.div
                                         animate={{ rotate: expandedSemester === sem.id ? 180 : 0 }}
                                         transition={{ duration: 0.3 }}
-                                        className={`w-8 h-8 rounded-full flex items-center justify-center ${expandedSemester === sem.id ? 'bg-blue-600 text-white' : 'bg-slate-100 text-slate-500'}`}
+                                        className={`w-8 h-8 rounded-full flex items-center justify-center ${expandedSemester === sem.id ? 'bg-slate-900 text-white' : 'bg-slate-100 text-slate-500'}`}
                                     >
                                         <ChevronDown size={16} />
                                     </motion.div>
@@ -96,11 +96,11 @@ const LegalNotes = () => {
                                                     className="p-5 flex items-center justify-between cursor-pointer hover:bg-neo-green/5 transition-colors group"
                                                     onClick={(e) => toggleSubject(subject.id, e)}
                                                 >
-                                                    <span className="font-semibold text-slate-700 group-hover:text-blue-600 transition-colors">{subject.name}</span>
+                                                    <span className="font-semibold text-slate-700 group-hover:text-slate-900 transition-colors">{subject.name}</span>
                                                     <motion.div
                                                         animate={{ rotate: expandedSubject === subject.id ? 180 : 0 }}
                                                     >
-                                                        <ChevronDown size={18} className="text-slate-400 group-hover:text-blue-600 transition-colors" />
+                                                        <ChevronDown size={18} className="text-slate-400 group-hover:text-slate-900 transition-colors" />
                                                     </motion.div>
                                                 </div>
 
@@ -115,7 +115,7 @@ const LegalNotes = () => {
                                                         >
                                                             {/* Notes Section */}
                                                             <div>
-                                                                <h4 className="text-xs font-bold text-blue-600 uppercase tracking-widest mb-4 flex items-center gap-2">
+                                                                <h4 className="text-xs font-bold text-slate-900 uppercase tracking-widest mb-4 flex items-center gap-2">
                                                                     <FileText size={14} /> Notes
                                                                 </h4>
                                                                 <ul className="space-y-3">

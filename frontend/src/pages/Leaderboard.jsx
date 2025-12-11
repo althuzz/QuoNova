@@ -30,7 +30,7 @@ const Leaderboard = () => {
         return <span className="text-slate-400 font-bold w-6 text-center">#{index + 1}</span>;
     };
 
-    if (loading) return <div className="text-center py-20 text-blue-600 animate-pulse uppercase tracking-widest text-sm">Loading rankings...</div>;
+    if (loading) return <div className="text-center py-20 text-slate-900 animate-pulse uppercase tracking-widest text-sm">Loading rankings...</div>;
 
     return (
         <motion.div
@@ -45,10 +45,10 @@ const Leaderboard = () => {
                     animate={{ scale: 1 }}
                     transition={{ type: "spring", stiffness: 260, damping: 20 }}
                 >
-                    <Trophy className="mx-auto text-blue-600 mb-6 drop-shadow-sm" size={56} />
+                    <Trophy className="mx-auto text-slate-900 mb-6 drop-shadow-sm" size={56} />
                 </motion.div>
-                <h1 className="text-5xl font-sans font-black mb-3 text-slate-900 tracking-tight">Legal <span className="text-blue-600">Classroom</span> Rankings</h1>
-                <p className="text-slate-500 text-lg font-light">Top legal minds of the week</p>
+                <h1 className="text-5xl font-sans font-black mb-3 text-slate-900 tracking-tight">Legal <span className="text-warm-brown-500">Classroom</span> Rankings</h1>
+                <p className="text-warm-brown-600 text-lg font-light">Top legal minds of the week</p>
             </div>
 
             <div className="bg-white rounded-3xl overflow-hidden shadow-lg border border-slate-200">
@@ -67,13 +67,13 @@ const Leaderboard = () => {
                                 {getRankIcon(index)}
                             </div>
                             <div>
-                                <div className="font-bold text-slate-800 font-sans text-lg group-hover:text-blue-600 transition-colors">{user.username || user.name}</div>
+                                <div className="font-bold text-slate-800 font-sans text-lg group-hover:text-slate-900 transition-colors">{user.username || user.name}</div>
                                 <div className="text-xs text-slate-400 uppercase tracking-wider font-medium">Rank: {user.rank || index + 1}</div>
                             </div>
                         </div>
 
                         <div className="text-right relative z-10">
-                            <div className="font-black text-2xl text-blue-600 drop-shadow-sm">{user.score} <span className="text-xs text-slate-400 font-normal align-middle">pts</span></div>
+                            <div className="font-black text-2xl text-slate-900 drop-shadow-sm">{user.score} <span className="text-xs text-slate-400 font-normal align-middle">pts</span></div>
                             <div className="text-xs text-slate-400">{user.date}</div>
                         </div>
                     </motion.div>

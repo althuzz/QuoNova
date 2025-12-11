@@ -39,7 +39,7 @@ const Profile = ({ onLogout }) => {
     if (onLogout) onLogout();
   };
 
-  if (loading) return <div className="p-10 text-center text-blue-600 font-mono animate-pulse uppercase tracking-widest">Loading identity...</div>;
+  if (loading) return <div className="p-10 text-center text-slate-900 font-mono animate-pulse uppercase tracking-widest">Loading identity...</div>;
   if (error) return <div className="p-10 text-red-500 font-mono text-center border border-red-200 bg-red-50 rounded-lg max-w-md mx-auto mt-10">ERROR: {error}</div>;
   if (!user) return <div className="p-10 text-slate-500 font-mono text-center">No user data found</div>;
 
@@ -49,7 +49,7 @@ const Profile = ({ onLogout }) => {
 
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 mb-8 border-b border-slate-100 pb-8">
           <div className="flex items-center gap-6">
-            <div className="bg-blue-600 text-white rounded-2xl p-5 shadow-md">
+            <div className="bg-slate-900 text-white rounded-2xl p-5 shadow-md">
               <User className="w-10 h-10" />
             </div>
             <div>
@@ -76,7 +76,7 @@ const Profile = ({ onLogout }) => {
           </div>
 
           <div className="col-span-2 bg-white border border-slate-200 p-6 rounded-2xl">
-            <h3 className="text-xs font-bold text-blue-600 uppercase tracking-widest mb-6 flex items-center gap-2">
+            <h3 className="text-xs font-bold text-slate-900 uppercase tracking-widest mb-6 flex items-center gap-2">
               <Calendar className="w-4 h-4" /> Score History
             </h3>
 
@@ -88,7 +88,7 @@ const Profile = ({ onLogout }) => {
                   <div className="text-sm text-slate-700 font-medium">Quiz <span className="text-slate-400">#{s.quizId}</span></div>
                   <div className="flex items-center gap-6">
                     <div className="text-xs text-slate-500 font-mono">{s.date}</div>
-                    <div className="text-xl font-bold text-blue-600 w-12 text-right">{s.score}</div>
+                    <div className="text-xl font-bold text-slate-900 w-12 text-right">{s.score}</div>
                   </div>
                 </div>
               ))}

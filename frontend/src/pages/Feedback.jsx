@@ -53,7 +53,7 @@ const Feedback = () => {
                 </div>
                 <h2 className="text-4xl font-bold mb-4 font-sans text-slate-900 tracking-tight">Message Sent!</h2>
                 <p className="text-slate-500 mb-10 text-lg">Thank you for your feedback. We'll get back to you shortly.</p>
-                <button className="bg-blue-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-blue-700 transition-all shadow-md" onClick={() => setStatus('idle')}>
+                <button className="bg-slate-900 text-white px-8 py-4 rounded-xl font-bold hover:bg-slate-800 transition-all shadow-sm" onClick={() => setStatus('idle')}>
                     Send Another Message
                 </button>
             </motion.div>
@@ -68,8 +68,8 @@ const Feedback = () => {
             className="max-w-2xl mx-auto"
         >
             <div className="text-center mb-12 relative">
-                <h1 className="text-5xl font-sans font-black mb-4 text-slate-900 tracking-tight">Contact & <span className="text-blue-600">Support</span></h1>
-                <p className="text-slate-500 text-lg font-light">Have a question or suggestion? We'd love to hear from you.</p>
+                <h1 className="text-5xl font-sans font-black mb-4 text-slate-900 tracking-tight">Contact & <span className="text-warm-brown-500">Support</span></h1>
+                <p className="text-warm-brown-600 text-lg font-light">Have a question or suggestion? We'd love to hear from you.</p>
             </div>
 
             <div className="bg-white p-8 rounded-3xl shadow-lg border border-slate-200 relative overflow-hidden">
@@ -139,7 +139,7 @@ const Feedback = () => {
                         whileTap={{ scale: 0.98 }}
                         type="submit"
                         disabled={status === 'submitting'}
-                        className="w-full py-5 bg-blue-600 text-white font-bold text-lg rounded-xl shadow-lg hover:bg-blue-700 transition-all flex items-center justify-center gap-2 group"
+                        className="w-full py-5 bg-slate-900 text-white font-bold text-lg rounded-xl shadow-sm hover:bg-slate-800 transition-all flex items-center justify-center gap-2 group"
                     >
                         {status === 'submitting' ? (
                             <span className="animate-pulse">Sending...</span>

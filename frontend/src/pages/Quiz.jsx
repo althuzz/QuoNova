@@ -90,10 +90,10 @@ const Quiz = () => {
             <div className="max-w-4xl mx-auto relative">
                 <FloatingLegalIcons />
                 <div className="flex flex-col items-center justify-center min-h-[50vh]">
-                    <div className="animate-spin text-blue-600 mb-4 rounded-full">
+                    <div className="animate-spin text-slate-900 mb-4 rounded-full">
                         <RotateCw size={40} />
                     </div>
-                    <p className="text-slate-500 font-medium tracking-widest text-sm uppercase">Loading Questions...</p>
+                    <p className="text-warm-brown-600 font-medium tracking-widest text-sm uppercase">Loading Questions...</p>
                 </div>
             </div>
         );
@@ -106,18 +106,18 @@ const Quiz = () => {
                 animate={{ opacity: 1, scale: 1 }}
                 className="max-w-xl mx-auto text-center py-12 relative"
             >
-                <div className="w-24 h-24 bg-blue-50 border border-blue-100 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-8">
+                <div className="w-24 h-24 bg-slate-100 border border-slate-200 text-slate-900 rounded-full flex items-center justify-center mx-auto mb-8">
                     <Award size={48} />
                 </div>
                 <h2 className="text-4xl font-sans font-bold mb-2 text-slate-900 tracking-tight">Quiz Complete!</h2>
-                <p className="text-slate-500 mb-10 font-light">You have mastered this session.</p>
+                <p className="text-warm-brown-600 mb-10 font-light">You have mastered this session.</p>
 
-                <div className="text-7xl font-black text-blue-600 mb-10 tracking-tighter">
+                <div className="text-7xl font-black text-slate-900 mb-10 tracking-tighter">
                     {score}
                 </div>
 
                 <div className="grid grid-cols-2 gap-4">
-                    <button onClick={restartQuiz} className="px-6 py-4 border border-blue-600 text-blue-600 font-bold rounded-xl hover:bg-blue-600 hover:text-white transition-all shadow-sm">
+                    <button onClick={restartQuiz} className="px-6 py-4 border border-slate-900 text-slate-900 font-bold rounded-xl hover:bg-slate-900 hover:text-white transition-all shadow-sm">
                         Play Again
                     </button>
                     <button onClick={() => navigate('/leaderboard')} className="px-6 py-4 bg-slate-100 text-slate-600 font-bold rounded-xl hover:bg-slate-200 transition-all border border-slate-200">
@@ -136,11 +136,11 @@ const Quiz = () => {
             {/* Header */}
             <div className="flex justify-between items-center mb-8">
                 <div>
-                    <span className="text-xs font-bold text-blue-600 uppercase tracking-[0.2em]">Question {currentQuestion + 1} of {questions.length}</span>
+                    <span className="text-xs font-bold text-slate-900 uppercase tracking-[0.2em]">Question {currentQuestion + 1} of {questions.length}</span>
                     <h2 className="text-2xl font-bold text-slate-900 font-sans mt-2 tracking-tight">Constitutional Law</h2>
                 </div>
                 <div className="bg-white text-slate-900 px-5 py-2 rounded-full font-bold shadow-sm border border-slate-200 flex items-center gap-2">
-                    <div className="w-2 h-2 rounded-full bg-blue-600 animate-pulse" />
+                    <div className="w-2 h-2 rounded-full bg-slate-900 animate-pulse" />
                     {score} pts
                 </div>
             </div>
@@ -148,7 +148,7 @@ const Quiz = () => {
             {/* Progress */}
             <div className="h-1.5 bg-slate-200 rounded-full mb-10 overflow-hidden">
                 <motion.div
-                    className="h-full bg-blue-600"
+                    className="h-full bg-slate-900"
                     initial={{ width: 0 }}
                     animate={{ width: `${progress}%` }}
                     transition={{ duration: 0.5 }}
@@ -171,15 +171,15 @@ const Quiz = () => {
 
                     <div className="space-y-4 relative z-10">
                         {currentQ?.options?.map((option, index) => {
-                            let stateClass = "border-slate-200 hover:border-blue-300 hover:bg-blue-50 shadow-sm";
+                            let stateClass = "border-slate-200 hover:border-slate-300 hover:bg-slate-50 shadow-sm";
                             let iconClass = "bg-slate-100 text-slate-500";
                             let textClass = "text-slate-700";
 
                             if (selectedOption !== null) {
                                 if (index === currentQ.correctAnswer) {
-                                    stateClass = "border-blue-600 bg-blue-50";
-                                    iconClass = "bg-blue-600 text-white border-blue-600 font-bold";
-                                    textClass = "text-blue-900 font-bold";
+                                    stateClass = "border-slate-900 bg-slate-50";
+                                    iconClass = "bg-slate-900 text-white border-slate-900 font-bold";
+                                    textClass = "text-slate-900 font-bold";
                                 } else if (index === selectedOption) {
                                     stateClass = "border-red-200 bg-red-50";
                                     iconClass = "bg-red-500 text-white border-red-500";

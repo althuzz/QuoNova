@@ -84,14 +84,14 @@ const LegalAI = () => {
             {/* Header */}
             <div className="text-center mb-6">
                 <div className="flex items-center justify-center gap-3 mb-3">
-                    <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-600 to-blue-700 flex items-center justify-center shadow-lg">
+                    <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center shadow-lg">
                         <Sparkles className="text-white" size={24} />
                     </div>
                     <h1 className="text-4xl font-black text-slate-900 tracking-tight">
-                        Law <span className="text-blue-600">AI Assistant</span>
+                        Law <span className="text-warm-brown-500">AI Assistant</span>
                     </h1>
                 </div>
-                <p className="text-slate-500 text-sm">Powered by Local Knowledge Base • Indian Law Specialist</p>
+                <p className="text-warm-brown-600 text-sm">Powered by Local Knowledge Base • Indian Law Specialist</p>
             </div>
 
             {/* Chat Container */}
@@ -110,12 +110,12 @@ const LegalAI = () => {
                             >
                                 {message.role === 'assistant' && (
                                     <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0 mt-1">
-                                        <Bot className="text-blue-600" size={18} />
+                                        <Bot className="text-slate-900" size={18} />
                                     </div>
                                 )}
                                 <div
                                     className={`max-w-[75%] rounded-2xl px-5 py-3 ${message.role === 'user'
-                                        ? 'bg-blue-600 text-white'
+                                        ? 'bg-slate-900 text-white'
                                         : 'bg-slate-100 text-slate-900'
                                         }`}
                                 >
@@ -140,10 +140,10 @@ const LegalAI = () => {
                             className="flex gap-3"
                         >
                             <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
-                                <Bot className="text-blue-600" size={18} />
+                                <Bot className="text-slate-900" size={18} />
                             </div>
                             <div className="bg-slate-100 rounded-2xl px-5 py-3 flex items-center gap-2">
-                                <Loader2 className="animate-spin text-blue-600" size={16} />
+                                <Loader2 className="animate-spin text-slate-900" size={16} />
                                 <span className="text-sm text-slate-600">Thinking...</span>
                             </div>
                         </motion.div>
@@ -160,14 +160,14 @@ const LegalAI = () => {
                             onChange={(e) => setInput(e.target.value)}
                             onKeyPress={handleKeyPress}
                             placeholder="Ask about Indian legal cases, statutes, or concepts..."
-                            className="flex-1 resize-none rounded-xl border border-slate-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent max-h-32 min-h-[44px]"
+                            className="flex-1 resize-none rounded-xl border border-slate-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-slate-900 focus:border-transparent max-h-32 min-h-[44px]"
                             rows={1}
                             disabled={isLoading}
                         />
                         <button
                             onClick={sendMessage}
                             disabled={!input.trim() || isLoading}
-                            className="px-5 py-3 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2 font-semibold shadow-sm"
+                            className="px-5 py-3 bg-slate-900 text-white rounded-xl hover:bg-slate-800 transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2 font-semibold shadow-sm"
                         >
                             <Send size={18} />
                             <span className="hidden sm:inline">Send</span>

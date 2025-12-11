@@ -97,12 +97,12 @@ const AuthPage = () => {
                 <form onSubmit={handleSubmit} className="space-y-6">
                     {!isLogin && (
                         <div className="space-y-2">
-                            <label className="text-xs font-bold text-blue-600 uppercase tracking-wider">Username</label>
+                            <label className="text-xs font-bold text-slate-900 uppercase tracking-wider">Username</label>
                             <div className="relative">
                                 <User className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400" size={18} />
                                 <input
                                     name="username"
-                                    className="w-full pl-12 pr-4 py-4 bg-white border border-slate-300 rounded-xl text-slate-900 focus:border-blue-600 focus:ring-1 focus:ring-blue-600 outline-none transition-all placeholder:text-slate-400"
+                                    className="w-full pl-12 pr-4 py-4 bg-white border border-slate-300 rounded-xl text-slate-900 focus:border-slate-900 focus:ring-1 focus:ring-slate-900 outline-none transition-all placeholder:text-slate-400"
                                     placeholder="Username"
                                     value={formData.username}
                                     onChange={handleChange}
@@ -112,13 +112,13 @@ const AuthPage = () => {
                     )}
 
                     <div className="space-y-2">
-                        <label className="text-xs font-bold text-blue-600 uppercase tracking-wider">Email</label>
+                        <label className="text-xs font-bold text-slate-900 uppercase tracking-wider">Email</label>
                         <div className="relative">
                             <Mail className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400" size={18} />
                             <input
                                 name="email"
                                 type="email"
-                                className="w-full pl-12 pr-4 py-4 bg-white border border-slate-300 rounded-xl text-slate-900 focus:border-blue-600 focus:ring-1 focus:ring-blue-600 outline-none transition-all placeholder:text-slate-400"
+                                className="w-full pl-12 pr-4 py-4 bg-white border border-slate-300 rounded-xl text-slate-900 focus:border-slate-900 focus:ring-1 focus:ring-slate-900 outline-none transition-all placeholder:text-slate-400"
                                 placeholder="email@example.com"
                                 value={formData.email}
                                 onChange={handleChange}
@@ -127,13 +127,13 @@ const AuthPage = () => {
                     </div>
 
                     <div className="space-y-2">
-                        <label className="text-xs font-bold text-blue-600 uppercase tracking-wider">Password</label>
+                        <label className="text-xs font-bold text-slate-900 uppercase tracking-wider">Password</label>
                         <div className="relative">
                             <Lock className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400" size={18} />
                             <input
                                 name="password"
                                 type="password"
-                                className="w-full pl-12 pr-4 py-4 bg-white border border-slate-300 rounded-xl text-slate-900 focus:border-blue-600 focus:ring-1 focus:ring-blue-600 outline-none transition-all placeholder:text-slate-400"
+                                className="w-full pl-12 pr-4 py-4 bg-white border border-slate-300 rounded-xl text-slate-900 focus:border-slate-900 focus:ring-1 focus:ring-slate-900 outline-none transition-all placeholder:text-slate-400"
                                 placeholder="••••••••"
                                 value={formData.password}
                                 onChange={handleChange}
@@ -143,13 +143,13 @@ const AuthPage = () => {
 
                     {!isLogin && (
                         <div className="space-y-2">
-                            <label className="text-xs font-bold text-blue-600 uppercase tracking-wider">Confirm Password</label>
+                            <label className="text-xs font-bold text-slate-900 uppercase tracking-wider">Confirm Password</label>
                             <div className="relative">
                                 <Lock className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400" size={18} />
                                 <input
                                     name="confirmPassword"
                                     type="password"
-                                    className="w-full pl-12 pr-4 py-4 bg-white border border-slate-300 rounded-xl text-slate-900 focus:border-blue-600 focus:ring-1 focus:ring-blue-600 outline-none transition-all placeholder:text-slate-400"
+                                    className="w-full pl-12 pr-4 py-4 bg-white border border-slate-300 rounded-xl text-slate-900 focus:border-slate-900 focus:ring-1 focus:ring-slate-900 outline-none transition-all placeholder:text-slate-400"
                                     placeholder="••••••••"
                                     value={formData.confirmPassword}
                                     onChange={handleChange}
@@ -163,7 +163,7 @@ const AuthPage = () => {
                         whileTap={{ scale: 0.98 }}
                         type="submit"
                         disabled={loading}
-                        className="w-full py-5 bg-blue-600 text-white font-bold rounded-xl shadow-md hover:bg-blue-700 transition-all flex justify-center items-center gap-2 mt-8 text-lg"
+                        className="w-full py-5 bg-slate-900 text-white font-bold rounded-xl shadow-sm hover:bg-slate-800 transition-all flex justify-center items-center gap-2 mt-8 text-lg"
                     >
                         {loading ? <span className="animate-pulse">Processing...</span> : (isLogin ? <><LogIn size={20} /> Sign In</> : <><UserPlus size={20} /> Register</>)}
                     </motion.button>
@@ -173,7 +173,7 @@ const AuthPage = () => {
                     {isLogin ? "Don't have an account? " : "Already have an account? "}
                     <button
                         onClick={() => setIsLogin(!isLogin)}
-                        className="text-blue-600 font-bold hover:text-blue-700 transition-colors border-b border-blue-600/20 hover:border-blue-600 pb-0.5 ml-1"
+                        className="text-slate-900 font-bold hover:text-slate-700 transition-colors border-b border-slate-900/20 hover:border-slate-900 pb-0.5 ml-1"
                     >
                         {isLogin ? 'Sign up' : 'Log in'}
                     </button>

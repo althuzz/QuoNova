@@ -31,65 +31,152 @@ const Home = () => {
             animate="visible"
         >
 
-            {/* Floating Legal Icons */}
-            <div className="absolute inset-0 overflow-hidden pointer-events-none -z-5">
-                <Scale className="absolute top-20 left-10 text-blue-200 opacity-20 float" size={80} style={{ animationDelay: '0s' }} />
-                <Gavel className="absolute top-40 right-20 text-blue-300 opacity-15 float" size={60} style={{ animationDelay: '2s' }} />
-                <BookMarked className="absolute bottom-40 left-1/4 text-blue-200 opacity-20 float" size={70} style={{ animationDelay: '4s' }} />
-                <Scale className="absolute bottom-20 right-1/3 text-blue-300 opacity-15 float" size={50} style={{ animationDelay: '1s' }} />
-            </div>
-
-            {/* Hero Section */}
-            <div className="text-center pt-8 pb-16 px-4 relative z-10">
-                <motion.div
-                    variants={itemVariants}
-                    className="inline-flex items-center justify-center p-1.5 pr-4 bg-blue-50 border border-blue-100 rounded-full mb-8 shadow-sm mx-auto"
-                >
-                    <span className="px-3 py-1 bg-blue-600 text-white rounded-full text-xs font-bold">New</span>
-                    <span className="ml-3 text-sm text-slate-600 font-medium tracking-wide">BNS 2023 Guidelines Added</span>
-                </motion.div>
-
-                <motion.h1
-                    variants={itemVariants}
-                    className="text-6xl md:text-8xl font-sans font-black text-slate-900 tracking-tighter mb-8 leading-[1.1]"
-                >
-                    Master the <br />
-                    <span className="text-blue-600 relative inline-block text-3d-blue">
-                        Laws of the Land
-                    </span>
-                </motion.h1>
-
-                <motion.p
-                    variants={itemVariants}
-                    className="text-xl text-slate-500 mb-12 max-w-2xl mx-auto leading-relaxed font-light"
-                >
-                    The ultimate platform for legal aspirants. Test your knowledge, access vital legal notes, and climb the judicial ranks.
-                </motion.p>
-
-                <motion.div
-                    variants={itemVariants}
-                    className="flex flex-col sm:flex-row gap-6 justify-center items-center"
-                >
-                    <Link to="/quiz" className="w-full sm:w-auto">
-                        <motion.button
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                            className="w-full px-10 py-5 bg-blue-600 text-white font-bold text-lg rounded-2xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2 group pulse-glow"
+            {/* Modern Hero Section with Creative Layout */}
+            <div className="relative px-4 pt-12 pb-24">
+                {/* Left Side - Headline */}
+                <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+                    <motion.div
+                        initial={{ opacity: 0, x: -50 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.8 }}
+                        className="relative z-10"
+                    >
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.2 }}
+                            className="inline-flex items-center gap-2 px-4 py-2 bg-warm-brown-100 rounded-full mb-6"
                         >
-                            <span>Start Quiz</span>
-                            <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
-                        </motion.button>
-                    </Link>
-                    <Link to="/notes" className="w-full sm:w-auto">
-                        <motion.button
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                            className="w-full px-10 py-5 bg-white text-slate-700 border border-slate-200 font-bold text-lg rounded-2xl shadow-sm hover:shadow-md transition-all"
+                            <div className="w-2 h-2 bg-warm-brown-500 rounded-full animate-pulse" />
+                            <span className="text-xs font-bold text-warm-brown-700 uppercase tracking-wider">BNS 2023 Updated</span>
+                        </motion.div>
+
+                        <h1 className="mb-6">
+                            <div className="text-sm font-bold text-warm-brown-600 uppercase tracking-[0.3em] mb-3">Master the</div>
+                            <div className="text-6xl md:text-8xl font-black text-slate-900 tracking-tight leading-[0.85] mb-2">
+                                LAWS OF
+                            </div>
+                            <div className="text-6xl md:text-8xl font-black tracking-tight leading-[0.85]">
+                                THE <span className="text-warm-brown-500">LAND</span>
+                            </div>
+                        </h1>
+
+                        <p className="text-lg text-slate-600 mb-8 max-w-lg leading-relaxed">
+                            The ultimate platform for legal aspirants. Test your knowledge, access vital legal notes, and climb the judicial ranks.
+                        </p>
+
+                        <div className="flex flex-wrap gap-4">
+                            <Link to="/quiz">
+                                <motion.button
+                                    whileHover={{ scale: 1.02, y: -2 }}
+                                    whileTap={{ scale: 0.98 }}
+                                    className="px-8 py-4 bg-slate-900 text-white font-bold rounded-2xl shadow-lg hover:shadow-xl transition-all flex items-center gap-2 group"
+                                >
+                                    <span>Start Quiz</span>
+                                    <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
+                                </motion.button>
+                            </Link>
+                            <Link to="/notes">
+                                <motion.button
+                                    whileHover={{ scale: 1.02, y: -2 }}
+                                    whileTap={{ scale: 0.98 }}
+                                    className="px-8 py-4 bg-white text-slate-900 font-bold rounded-2xl border-2 border-slate-200 hover:border-slate-300 transition-all"
+                                >
+                                    Browse Notes
+                                </motion.button>
+                            </Link>
+                        </div>
+                    </motion.div>
+
+                    {/* Right Side - Creative Visual Cards */}
+                    <motion.div
+                        initial={{ opacity: 0, x: 50 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.8, delay: 0.2 }}
+                        className="relative h-[500px] hidden lg:block"
+                    >
+                        {/* Card 1 - Constitutional Law */}
+                        <motion.div
+                            initial={{ opacity: 0, y: 20, rotate: -3 }}
+                            animate={{ opacity: 1, y: 0, rotate: -3 }}
+                            transition={{ delay: 0.4 }}
+                            whileHover={{ rotate: 0, scale: 1.05, zIndex: 10 }}
+                            className="absolute top-0 left-0 w-64 h-72 bg-gradient-to-br from-slate-900 to-slate-700 rounded-3xl p-6 shadow-2xl cursor-pointer"
                         >
-                            Browse Notes
-                        </motion.button>
-                    </Link>
-                </motion.div>
+                            <div className="flex flex-col h-full justify-between">
+                                <div>
+                                    <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mb-4">
+                                        <Scale className="text-white" size={24} />
+                                    </div>
+                                    <h3 className="text-white font-bold text-xl mb-2">Constitutional Law</h3>
+                                    <p className="text-white/70 text-sm">Fundamental rights & duties</p>
+                                </div>
+                                <div className="flex items-center gap-2 text-white/90 text-sm font-semibold">
+                                    <span>Explore</span>
+                                    <ArrowRight size={16} />
+                                </div>
+                            </div>
+                        </motion.div>
+
+                        {/* Card 2 - Criminal Law */}
+                        <motion.div
+                            initial={{ opacity: 0, y: 20, rotate: 3 }}
+                            animate={{ opacity: 1, y: 0, rotate: 3 }}
+                            transition={{ delay: 0.5 }}
+                            whileHover={{ rotate: 0, scale: 1.05, zIndex: 10 }}
+                            className="absolute top-16 right-0 w-64 h-72 bg-gradient-to-br from-warm-brown-500 to-warm-brown-700 rounded-3xl p-6 shadow-2xl cursor-pointer"
+                        >
+                            <div className="flex flex-col h-full justify-between">
+                                <div>
+                                    <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mb-4">
+                                        <Gavel className="text-white" size={24} />
+                                    </div>
+                                    <h3 className="text-white font-bold text-xl mb-2">Criminal Law</h3>
+                                    <p className="text-white/70 text-sm">IPC, CrPC & Evidence Act</p>
+                                </div>
+                                <div className="flex items-center gap-2 text-white/90 text-sm font-semibold">
+                                    <span>Explore</span>
+                                    <ArrowRight size={16} />
+                                </div>
+                            </div>
+                        </motion.div>
+
+                        {/* Card 3 - Legal Resources */}
+                        <motion.div
+                            initial={{ opacity: 0, y: 20, rotate: -2 }}
+                            animate={{ opacity: 1, y: 0, rotate: -2 }}
+                            transition={{ delay: 0.6 }}
+                            whileHover={{ rotate: 0, scale: 1.05, zIndex: 10 }}
+                            className="absolute bottom-0 left-12 w-64 h-72 bg-white border-2 border-slate-200 rounded-3xl p-6 shadow-2xl cursor-pointer"
+                        >
+                            <div className="flex flex-col h-full justify-between">
+                                <div>
+                                    <div className="w-12 h-12 bg-slate-100 rounded-xl flex items-center justify-center mb-4">
+                                        <BookMarked className="text-slate-900" size={24} />
+                                    </div>
+                                    <h3 className="text-slate-900 font-bold text-xl mb-2">Legal Resources</h3>
+                                    <p className="text-slate-600 text-sm">Curated notes & case studies</p>
+                                </div>
+                                <div className="flex items-center gap-2 text-slate-900 text-sm font-semibold">
+                                    <span>Explore</span>
+                                    <ArrowRight size={16} />
+                                </div>
+                            </div>
+                        </motion.div>
+
+                        {/* Decorative Elements */}
+                        <motion.div
+                            animate={{ rotate: 360 }}
+                            transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+                            className="absolute -top-8 -right-8 w-24 h-24 border-4 border-warm-brown-200 rounded-full opacity-30"
+                        />
+                        <motion.div
+                            animate={{ y: [0, -10, 0] }}
+                            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                            className="absolute -bottom-4 -left-4 w-16 h-16 bg-slate-900 rounded-2xl opacity-10"
+                        />
+                    </motion.div>
+                </div>
             </div>
 
             {/* Features Grid */}
@@ -98,17 +185,17 @@ const Home = () => {
                 className="grid md:grid-cols-3 gap-6 mt-16 px-4"
             >
                 <FeatureCard
-                    icon={<Scale className="text-blue-600" size={28} />}
+                    icon={<Scale className="text-slate-900" size={28} />}
                     title="Daily Quizzes"
                     description="Challenge yourself with updated constitutional and criminal law questions."
                 />
                 <FeatureCard
-                    icon={<BookOpen className="text-blue-600" size={28} />}
+                    icon={<BookOpen className="text-slate-900" size={28} />}
                     title="Legal Notes"
                     description="Download curated PDF notes for quick revision and deep dives."
                 />
                 <FeatureCard
-                    icon={<Award className="text-blue-600" size={28} />}
+                    icon={<Award className="text-slate-900" size={28} />}
                     title="Rank System"
                     description="Progress from Student to Chief Justice as you earn points."
                 />
@@ -135,11 +222,11 @@ const FeatureCard = ({ icon, title, description }) => {
             whileHover={{ y: -10 }}
             className="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 group"
         >
-            <div className="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center mb-6 text-blue-600">
+            <div className="w-14 h-14 bg-slate-100 rounded-2xl flex items-center justify-center mb-6 text-slate-900">
                 {icon}
             </div>
-            <h3 className="text-2xl font-bold text-slate-900 mb-4">{title}</h3>
-            <p className="text-slate-500 leading-relaxed font-light">{description}</p>
+            <h3 className="text-xl font-bold text-slate-900 mb-3">{title}</h3>
+            <p className="text-warm-brown-600 leading-relaxed">{description}</p>
         </motion.div>
     );
 };
