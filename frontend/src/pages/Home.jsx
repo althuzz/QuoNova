@@ -32,7 +32,7 @@ const Home = () => {
         >
 
             {/* Modern Hero Section with Creative Layout */}
-            <div className="relative px-4 pt-12 pb-24">
+            <div className="relative px-4 pt-4 pb-24">
                 {/* Left Side - Headline */}
                 <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
                     <motion.div
