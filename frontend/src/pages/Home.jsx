@@ -88,167 +88,99 @@ const Home = () => {
                         </div>
                     </motion.div>
 
-                    {/* Right Side - Creative Visual Cards */}
+                    {/* Creative Visual Cards - Responsive overlapping design */}
                     <motion.div
                         initial={{ opacity: 0, x: 50 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
-                        className="relative"
+                        className="relative h-[400px] md:h-[500px] mt-8 lg:mt-0"
                     >
-                        {/* Desktop: Overlapping cards layout */}
-                        <div className="hidden lg:block relative h-[500px]">
-                            {/* Card 1 - Constitutional Law */}
+                        {/* Card 1 - Quiz */}
+                        <Link to="/quiz">
                             <motion.div
                                 initial={{ opacity: 0, y: 20, rotate: -3 }}
                                 animate={{ opacity: 1, y: 0, rotate: -3 }}
                                 transition={{ delay: 0.4 }}
                                 whileHover={{ rotate: 0, scale: 1.05, zIndex: 10 }}
-                                className="absolute top-0 left-0 w-64 h-72 bg-gradient-to-br from-slate-900 to-slate-700 rounded-3xl p-6 shadow-2xl cursor-pointer"
+                                className="absolute top-0 left-0 w-48 h-64 md:w-64 md:h-72 bg-gradient-to-br from-slate-900 to-slate-700 rounded-3xl p-5 md:p-6 shadow-2xl cursor-pointer"
                             >
                                 <div className="flex flex-col h-full justify-between">
                                     <div>
-                                        <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mb-4">
-                                            <Scale className="text-white" size={24} />
+                                        <div className="w-10 h-10 md:w-12 md:h-12 bg-white/20 rounded-xl flex items-center justify-center mb-3 md:mb-4">
+                                            <Scale className="text-white" size={20} />
                                         </div>
-                                        <h3 className="text-white font-bold text-xl mb-2">Constitutional Law</h3>
-                                        <p className="text-white/70 text-sm">Fundamental rights & duties</p>
+                                        <h3 className="text-white font-bold text-lg md:text-xl mb-2">Daily Quizzes</h3>
+                                        <p className="text-white/70 text-xs md:text-sm">Challenge yourself with updated constitutional and criminal law questions</p>
                                     </div>
-                                    <div className="flex items-center gap-2 text-white/90 text-sm font-semibold">
-                                        <span>Explore</span>
-                                        <ArrowRight size={16} />
+                                    <div className="flex items-center gap-2 text-white/90 text-xs md:text-sm font-semibold">
+                                        <span>Start Quiz</span>
+                                        <ArrowRight size={14} />
                                     </div>
                                 </div>
                             </motion.div>
+                        </Link>
 
-                            {/* Card 2 - Criminal Law */}
+                        {/* Card 2 - Legal Notes */}
+                        <Link to="/notes">
                             <motion.div
                                 initial={{ opacity: 0, y: 20, rotate: 3 }}
                                 animate={{ opacity: 1, y: 0, rotate: 3 }}
                                 transition={{ delay: 0.5 }}
                                 whileHover={{ rotate: 0, scale: 1.05, zIndex: 10 }}
-                                className="absolute top-16 right-0 w-64 h-72 bg-gradient-to-br from-warm-brown-500 to-warm-brown-700 rounded-3xl p-6 shadow-2xl cursor-pointer"
+                                className="absolute top-12 md:top-16 right-0 w-48 h-64 md:w-64 md:h-72 bg-gradient-to-br from-warm-brown-500 to-warm-brown-700 rounded-3xl p-5 md:p-6 shadow-2xl cursor-pointer"
                             >
                                 <div className="flex flex-col h-full justify-between">
                                     <div>
-                                        <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mb-4">
-                                            <Gavel className="text-white" size={24} />
+                                        <div className="w-10 h-10 md:w-12 md:h-12 bg-white/20 rounded-xl flex items-center justify-center mb-3 md:mb-4">
+                                            <BookMarked className="text-white" size={20} />
                                         </div>
-                                        <h3 className="text-white font-bold text-xl mb-2">Criminal Law</h3>
-                                        <p className="text-white/70 text-sm">IPC, CrPC & Evidence Act</p>
+                                        <h3 className="text-white font-bold text-lg md:text-xl mb-2">Legal Notes</h3>
+                                        <p className="text-white/70 text-xs md:text-sm">Download curated PDF notes for quick revision and deep study</p>
                                     </div>
-                                    <div className="flex items-center gap-2 text-white/90 text-sm font-semibold">
-                                        <span>Explore</span>
-                                        <ArrowRight size={16} />
+                                    <div className="flex items-center gap-2 text-white/90 text-xs md:text-sm font-semibold">
+                                        <span>Browse Notes</span>
+                                        <ArrowRight size={14} />
                                     </div>
                                 </div>
                             </motion.div>
+                        </Link>
 
-                            {/* Card 3 - Legal Resources */}
+                        {/* Card 3 - AI Assistant */}
+                        <Link to="/legal-ai">
                             <motion.div
                                 initial={{ opacity: 0, y: 20, rotate: -2 }}
                                 animate={{ opacity: 1, y: 0, rotate: -2 }}
                                 transition={{ delay: 0.6 }}
                                 whileHover={{ rotate: 0, scale: 1.05, zIndex: 10 }}
-                                className="absolute bottom-0 left-12 w-64 h-72 bg-white border-2 border-slate-200 rounded-3xl p-6 shadow-2xl cursor-pointer"
+                                className="absolute bottom-0 left-8 md:left-12 w-48 h-64 md:w-64 md:h-72 bg-white border-2 border-slate-200 rounded-3xl p-5 md:p-6 shadow-2xl cursor-pointer"
                             >
                                 <div className="flex flex-col h-full justify-between">
                                     <div>
-                                        <div className="w-12 h-12 bg-slate-100 rounded-xl flex items-center justify-center mb-4">
-                                            <BookMarked className="text-slate-900" size={24} />
+                                        <div className="w-10 h-10 md:w-12 md:h-12 bg-slate-100 rounded-xl flex items-center justify-center mb-3 md:mb-4">
+                                            <Gavel className="text-slate-900" size={20} />
                                         </div>
-                                        <h3 className="text-slate-900 font-bold text-xl mb-2">Legal Resources</h3>
-                                        <p className="text-slate-600 text-sm">Curated notes & case studies</p>
+                                        <h3 className="text-slate-900 font-bold text-lg md:text-xl mb-2">AI Assistant</h3>
+                                        <p className="text-slate-600 text-xs md:text-sm">Get instant answers to your legal queries powered by AI</p>
                                     </div>
-                                    <div className="flex items-center gap-2 text-slate-900 text-sm font-semibold">
-                                        <span>Explore</span>
-                                        <ArrowRight size={16} />
+                                    <div className="flex items-center gap-2 text-slate-900 text-xs md:text-sm font-semibold">
+                                        <span>Ask AI</span>
+                                        <ArrowRight size={14} />
                                     </div>
                                 </div>
                             </motion.div>
+                        </Link>
 
-                            {/* Decorative Elements */}
-                            <motion.div
-                                animate={{ rotate: 360 }}
-                                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                                className="absolute -top-8 -right-8 w-24 h-24 border-4 border-warm-brown-200 rounded-full opacity-30"
-                            />
-                            <motion.div
-                                animate={{ y: [0, -10, 0] }}
-                                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                                className="absolute -bottom-4 -left-4 w-16 h-16 bg-slate-900 rounded-2xl opacity-10"
-                            />
-                        </div>
-
-                        {/* Mobile: Horizontal scrollable cards */}
-                        <div className="lg:hidden overflow-x-auto pb-4 -mx-4 px-4">
-                            <div className="flex gap-4 min-w-max">
-                                {/* Card 1 - Constitutional Law */}
-                                <motion.div
-                                    initial={{ opacity: 0, y: 20 }}
-                                    animate={{ opacity: 1, y: 0 }}
-                                    transition={{ delay: 0.4 }}
-                                    className="w-64 h-72 bg-gradient-to-br from-slate-900 to-slate-700 rounded-3xl p-6 shadow-2xl flex-shrink-0"
-                                >
-                                    <div className="flex flex-col h-full justify-between">
-                                        <div>
-                                            <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mb-4">
-                                                <Scale className="text-white" size={24} />
-                                            </div>
-                                            <h3 className="text-white font-bold text-xl mb-2">Constitutional Law</h3>
-                                            <p className="text-white/70 text-sm">Fundamental rights & duties</p>
-                                        </div>
-                                        <div className="flex items-center gap-2 text-white/90 text-sm font-semibold">
-                                            <span>Explore</span>
-                                            <ArrowRight size={16} />
-                                        </div>
-                                    </div>
-                                </motion.div>
-
-                                {/* Card 2 - Criminal Law */}
-                                <motion.div
-                                    initial={{ opacity: 0, y: 20 }}
-                                    animate={{ opacity: 1, y: 0 }}
-                                    transition={{ delay: 0.5 }}
-                                    className="w-64 h-72 bg-gradient-to-br from-warm-brown-500 to-warm-brown-700 rounded-3xl p-6 shadow-2xl flex-shrink-0"
-                                >
-                                    <div className="flex flex-col h-full justify-between">
-                                        <div>
-                                            <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mb-4">
-                                                <Gavel className="text-white" size={24} />
-                                            </div>
-                                            <h3 className="text-white font-bold text-xl mb-2">Criminal Law</h3>
-                                            <p className="text-white/70 text-sm">IPC, CrPC & Evidence Act</p>
-                                        </div>
-                                        <div className="flex items-center gap-2 text-white/90 text-sm font-semibold">
-                                            <span>Explore</span>
-                                            <ArrowRight size={16} />
-                                        </div>
-                                    </div>
-                                </motion.div>
-
-                                {/* Card 3 - Legal Resources */}
-                                <motion.div
-                                    initial={{ opacity: 0, y: 20 }}
-                                    animate={{ opacity: 1, y: 0 }}
-                                    transition={{ delay: 0.6 }}
-                                    className="w-64 h-72 bg-white border-2 border-slate-200 rounded-3xl p-6 shadow-2xl flex-shrink-0"
-                                >
-                                    <div className="flex flex-col h-full justify-between">
-                                        <div>
-                                            <div className="w-12 h-12 bg-slate-100 rounded-xl flex items-center justify-center mb-4">
-                                                <BookMarked className="text-slate-900" size={24} />
-                                            </div>
-                                            <h3 className="text-slate-900 font-bold text-xl mb-2">Legal Resources</h3>
-                                            <p className="text-slate-600 text-sm">Curated notes & case studies</p>
-                                        </div>
-                                        <div className="flex items-center gap-2 text-slate-900 text-sm font-semibold">
-                                            <span>Explore</span>
-                                            <ArrowRight size={16} />
-                                        </div>
-                                    </div>
-                                </motion.div>
-                            </div>
-                        </div>
+                        {/* Decorative Elements */}
+                        <motion.div
+                            animate={{ rotate: 360 }}
+                            transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+                            className="absolute -top-8 -right-8 w-16 h-16 md:w-24 md:h-24 border-4 border-warm-brown-200 rounded-full opacity-30"
+                        />
+                        <motion.div
+                            animate={{ y: [0, -10, 0] }}
+                            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                            className="absolute -bottom-4 -left-4 w-12 h-12 md:w-16 md:h-16 bg-slate-900 rounded-2xl opacity-10"
+                        />
                     </motion.div>
                 </div>
             </div>
