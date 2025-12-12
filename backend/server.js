@@ -125,6 +125,76 @@ const quizzes = [
         options: ['Any age', 'Above 18 years of age', 'Above 16 years of age', 'Above 21 years of age'],
         correctAnswer: 0
       },
+      {
+        id: 29,
+        topic: 'criminal',
+        question: 'As per Sec. 320 of IPC, how many kinds of hurts are included under Grievous Hurt?',
+        options: ['6', '7', '8', '5'],
+        correctAnswer: 2
+      },
+      {
+        id: 30,
+        topic: 'criminal',
+        question: 'Extortion is defined under which Section of IPC, 1860?',
+        options: ['Sec. 384', 'Sec. 383', 'Sec. 390', 'Sec. 387'],
+        correctAnswer: 1
+      },
+      {
+        id: 31,
+        topic: 'criminal',
+        question: 'The Capital Punishment represents the following objective',
+        options: ['Retribution', 'Reformation', 'Rehabilitation', 'Self-Expiation'],
+        correctAnswer: 0
+      },
+      {
+        id: 32,
+        topic: 'criminal',
+        question: 'Define the term Actus Reus in one sentence.',
+        options: ['The guilty mind or mental element of a crime.', 'The physical act, conduct, or unlawful omission that constitutes the crime.', 'The justification or excuse for committing a crime.', 'The final judgment passed by a court in a criminal case.'],
+        correctAnswer: 1
+      },
+      {
+        id: 33,
+        topic: 'criminal',
+        question: 'What is the literal meaning of Mens Rea, and why is it a fundamental principle?',
+        options: ['"Guilty Act"; it ensures a physical action is punished.', '"Guilty Mind"; it ensures punishment is only for those with a blameworthy mental state.', '"Body of the Crime"; it is the first thing police must prove.', '"Statutory Law"; it allows for strict liability offences.'],
+        correctAnswer: 1
+      },
+      {
+        id: 34,
+        topic: 'criminal',
+        question: 'Section 34 IPC (corresponding to BNS) deals with acts done:',
+        options: ['In furtherance of common object of an unlawful assembly', 'By several persons in furtherance of common intention', 'By conspiracy between two or more persons', 'Through abetment'],
+        correctAnswer: 1
+      },
+      {
+        id: 35,
+        topic: 'criminal',
+        question: 'The key distinction between common intention (Section 34) and common object (Section 149) is:',
+        options: ['Common intention requires 5 or more persons', 'Common intention can exist with any number, common object requires 5+ in unlawful assembly', 'Common object requires pre-concert, common intention doesn\'t', 'Only common object applies to murder cases'],
+        correctAnswer: 1
+      },
+      {
+        id: 36,
+        topic: 'criminal',
+        question: 'In which case did the Supreme Court lay down that for Section 34, there must be a prior meeting of minds?',
+        options: ['R. v. Dudley and Stephens', 'Mahboob Shah v. Emperor', 'K.M. Nanavati v. State of Maharashtra', 'State of Maharashtra v. Prabhakar Pandurang'],
+        correctAnswer: 1
+      },
+      {
+        id: 37,
+        topic: 'criminal',
+        question: 'Criminal conspiracy under Section 120A IPC requires:',
+        options: ['Overt act in pursuance of agreement', 'Agreement between two or more persons to do illegal act or legal act by illegal means', 'Successful commission of the offence', 'Physical meeting of conspirators'],
+        correctAnswer: 1
+      },
+      {
+        id: 38,
+        topic: 'criminal',
+        question: 'In BNS, community service is introduced as a punishment for:',
+        options: ['All first-time offenders', 'Certain petty offences', 'Juveniles only', 'Economic offences only'],
+        correctAnswer: 1
+      },
 
       // Contract Law Questions
       {
@@ -147,6 +217,13 @@ const quizzes = [
         question: 'What is the doctrine of "Caveat Emptor"?',
         options: ['Let the buyer beware', 'Let the seller beware', 'Let both parties beware', 'None of the above'],
         correctAnswer: 0
+      },
+      {
+        id: 26,
+        topic: 'contract',
+        question: 'When the Communication of a proposal is complete',
+        options: ['When it do not comes to the knowledge of the person to whom it is made', 'When it comes to the knowledge of the another person that some communication was made to the concerned person', 'When it comes to the knowledge of the person to whom it is not made', 'When it comes to the knowledge of the person to whom it is made'],
+        correctAnswer: 3
       },
 
       // Property Law Questions
@@ -225,6 +302,22 @@ const quizzes = [
         question: '"Tort means a civil wrong which is not exclusively a breach of contract or breach of Trust." This definition is from which statute?',
         options: ['The Specific Relief Act', 'The Limitation Act', 'The Indian Contract Act', 'None of the above'],
         correctAnswer: 1
+      },
+
+      // Cyber Law Questions
+      {
+        id: 27,
+        topic: 'cyber',
+        question: 'Who can appoint the Controller of Certifying Authorities under Information Technology Act, 2000?',
+        options: ['The Central Government', 'The State Government', 'Both A) and B)', 'None of the above'],
+        correctAnswer: 0
+      },
+      {
+        id: 28,
+        topic: 'cyber',
+        question: 'What is the punishment for tempering with computer resource documents under Information Technology Act?',
+        options: ['Imprisonment upto three years or with fine which may extend upto two lakh rupees or with both', 'Imprisonment upto two years or with fine which may extend upto one lakh rupees or with both', 'Imprisonment upto one year or with fine which may extend upto one lakh rupees or with both', 'Imprisonment upto five years or with fine which may extend upto five lakh rupees or with both'],
+        correctAnswer: 0
       }
     ]
   }

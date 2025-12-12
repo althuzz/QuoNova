@@ -39,6 +39,7 @@ const Quiz = () => {
         { id: 'criminal', name: 'Criminal Law', icon: Gavel, color: 'from-warm-brown-500 to-warm-brown-700', description: 'IPC, CrPC & Evidence Act' },
         { id: 'contract', name: 'Contract Law', icon: FileText, color: 'from-slate-800 to-slate-600', description: 'Agreements & obligations' },
         { id: 'tort', name: 'Tort Law', icon: Scale, color: 'from-warm-brown-700 to-warm-brown-900', description: 'Civil wrongs & liability' },
+        { id: 'cyber', name: 'Cyber Law', icon: FileText, color: 'from-slate-500 to-slate-700', description: 'IT Act & digital crimes' },
         { id: 'property', name: 'Property Law', icon: Home, color: 'from-warm-brown-600 to-warm-brown-800', description: 'Real estate & ownership' },
         { id: 'family', name: 'Family Law', icon: Users, color: 'from-slate-700 to-slate-500', description: 'Marriage, divorce & inheritance' },
         { id: 'jurisprudence', name: 'Jurisprudence', icon: BookOpen, color: 'from-slate-600 to-slate-800', description: 'Legal theory & philosophy' },
