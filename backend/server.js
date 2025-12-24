@@ -406,12 +406,11 @@ app.get('/api/notes', (req, res) => {
           name: 'Law of Contracts',
           resources: {
             notes: [
-              { title: 'Contract Basics & Formation', url: '#' },
-              { title: 'Free Consent & Void Agreements', url: '#' }
+              { title: 'Law Of Contracts 1 - Anil K Nair', url: `${req.protocol}://${req.get('host')}/public/notes/Law Of Contracts 1-Anil K Nair.pdf` }
             ],
             previousQns: [
-              { title: '2023 Previous Year Paper', url: '#' },
-              { title: '2022 Previous Year Paper', url: '#' }
+              { title: '2023 Previous Year Paper', url: `${req.protocol}://${req.get('host')}/public/notes/Contracts_PYQ_2023.pdf` },
+              { title: '2022 Previous Year Paper', url: `${req.protocol}://${req.get('host')}/public/notes/Contracts_PYQ_2022.pdf` }
             ]
           }
         },

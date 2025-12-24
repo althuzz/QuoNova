@@ -1,0 +1,51 @@
+# Law of Contracts - PDF Notes Guide
+
+## Overview
+This directory contains PDF notes for the Law of Contracts subject. The backend server is configured to serve these files to students through the Legal Notes section.
+
+## Required PDF Files
+
+To complete the Law of Contracts notes section, you need to add the following PDF file to this directory:
+
+### Notes Files:
+1. **Law Of Contracts 1-Anil K Nair.pdf** - Complete Law of Contracts notes by Anil K Nair
+
+### Previous Year Question Papers:
+5. **Contracts_PYQ_2023.pdf** - 2023 Previous Year Paper
+6. **Contracts_PYQ_2022.pdf** - 2022 Previous Year Paper
+
+## How to Add PDF Files
+
+### Option 1: Manual Upload
+1. Place your PDF files in this directory: `backend/public/notes/`
+2. Make sure the filenames match exactly as listed above (case-sensitive)
+3. Restart the backend server if it's running
+
+### Option 2: Using File Explorer
+1. Navigate to: `c:\Users\altha\law-quiz-app\backend\public\notes\`
+2. Copy your PDF files into this folder
+3. Ensure filenames match the required names above
+
+## File Naming Convention
+- The filename should be exactly: `Law Of Contracts 1-Anil K Nair.pdf`
+- Note: This filename contains spaces, which is acceptable
+- Keep the .pdf extension
+
+## Verification
+After adding the file, you can verify it's accessible by:
+1. Starting the backend server: `npm start` (from backend directory)
+2. Opening a browser and navigating to:
+   - `http://localhost:5000/public/notes/Law%20Of%20Contracts%201-Anil%20K%20Nair.pdf`
+   - (Note: Spaces in URLs are encoded as %20)
+
+## Current Files in Directory
+- Constitutional_Law_1.pdf ✓ (Already present)
+- Law Of Contracts 1-Anil K Nair.pdf ⏳ (To be added)
+- Contracts_PYQ_2023.pdf ⏳ (Optional - Previous Year Paper)
+- Contracts_PYQ_2022.pdf ⏳ (Optional - Previous Year Paper)
+
+## Notes
+- The server automatically serves files from this directory via the `/public` route
+- PDF files should be properly formatted and readable
+- File size should be reasonable for web delivery (recommended < 50MB per file)
+- Make sure you have the rights to distribute these educational materials
