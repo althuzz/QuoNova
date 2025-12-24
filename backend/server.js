@@ -418,8 +418,8 @@ app.get('/api/notes', (req, res) => {
           id: 'torts',
           name: 'Law of Torts',
           resources: {
-            notes: [{ title: 'Nature & Definition of Tort', url: '#' }],
-            previousQns: [{ title: '2023 Previous Year Paper', url: '#' }]
+            notes: [{ title: 'Law of Torts - Anil K Nair', url: `${req.protocol}://${req.get('host')}/public/notes/Law of Torts -Anil K Nair.pdf` }],
+            previousQns: [{ title: '2023 Previous Year Paper', url: `${req.protocol}://${req.get('host')}/public/notes/Torts_PYQ_2023.pdf` }]
           }
         },
         {
@@ -434,24 +434,24 @@ app.get('/api/notes', (req, res) => {
           id: 'family1',
           name: 'Family Law 1',
           resources: {
-            notes: [{ title: 'Sources of Hindu Law', url: '#' }],
-            previousQns: [{ title: '2023 Previous Year Paper', url: '#' }]
+            notes: [{ title: 'Family Law 1 - Anil K Nair', url: `${req.protocol}://${req.get('host')}/public/notes/Family Law 1 -Anil K Nair.pdf` }],
+            previousQns: [{ title: '2023 Previous Year Paper', url: `${req.protocol}://${req.get('host')}/public/notes/Family_Law_PYQ_2023.pdf` }]
           }
         },
         {
           id: 'crimes1',
           name: 'Law of Crimes 1',
           resources: {
-            notes: [{ title: 'General Exceptions (IPC/BNS)', url: '#' }],
-            previousQns: [{ title: '2023 Previous Year Paper', url: '#' }]
+            notes: [{ title: 'BNS - Anil K Nair', url: `${req.protocol}://${req.get('host')}/public/notes/BNS ANIL K NAIR.pdf` }],
+            previousQns: [{ title: '2023 Previous Year Paper', url: `${req.protocol}://${req.get('host')}/public/notes/Crimes_PYQ_2023.pdf` }]
           }
         },
         {
           id: 'legal_lang',
           name: 'Legal Language and Legal Writing',
           resources: {
-            notes: [{ title: 'Legal Maxims & Terms', url: '#' }],
-            previousQns: [{ title: '2023 Previous Year Paper', url: '#' }]
+            notes: [{ title: 'Legal Language & Legal Writing - Anil K Nair', url: `${req.protocol}://${req.get('host')}/public/notes/Legal Language & Legal Writing-Anil K Nair.pdf` }],
+            previousQns: [{ title: '2023 Previous Year Paper', url: `${req.protocol}://${req.get('host')}/public/notes/Legal_Lang_PYQ_2023.pdf` }]
           }
         }
       ]

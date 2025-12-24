@@ -5,10 +5,14 @@ This directory contains PDF notes for the Law of Contracts subject. The backend 
 
 ## Required PDF Files
 
-To complete the Law of Contracts notes section, you need to add the following PDF file to this directory:
+To complete the notes section, you need to add the following PDF files to this directory:
 
 ### Notes Files:
 1. **Law Of Contracts 1-Anil K Nair.pdf** - Complete Law of Contracts notes by Anil K Nair
+2. **Family Law 1-Anil K Nair.pdf** - Complete Family Law notes by Anil K Nair
+3. **BNS ANIL K NAIR.pdf** - Bharatiya Nyaya Sanhita (BNS) notes by Anil K Nair
+4. **Law of Torts-Anil K Nair.pdf** - Complete Law of Torts notes by Anil K Nair
+5. **Legal Language & Legal Writing-Anil K Nair.pdf** - Legal Language and Legal Writing notes by Anil K Nair
 
 ### Previous Year Question Papers:
 5. **Contracts_PYQ_2023.pdf** - 2023 Previous Year Paper
@@ -40,9 +44,17 @@ After adding the file, you can verify it's accessible by:
 
 ## Current Files in Directory
 - Constitutional_Law_1.pdf ✓ (Already present)
-- Law Of Contracts 1-Anil K Nair.pdf ⏳ (To be added)
+- Law Of Contracts 1-Anil K Nair.pdf ✓ (Added)
+- Family Law 1-Anil K Nair.pdf ⏳ (To be added)
+- BNS ANIL K NAIR.pdf ⏳ (To be added)
+- Law of Torts-Anil K Nair.pdf ⏳ (To be added)
+- Legal Language & Legal Writing-Anil K Nair.pdf ⏳ (To be added)
 - Contracts_PYQ_2023.pdf ⏳ (Optional - Previous Year Paper)
 - Contracts_PYQ_2022.pdf ⏳ (Optional - Previous Year Paper)
+- Family_Law_PYQ_2023.pdf ⏳ (Optional - Previous Year Paper)
+- Crimes_PYQ_2023.pdf ⏳ (Optional - Previous Year Paper)
+- Torts_PYQ_2023.pdf ⏳ (Optional - Previous Year Paper)
+- Legal_Lang_PYQ_2023.pdf ⏳ (Optional - Previous Year Paper)
 
 ## Notes
 - The server automatically serves files from this directory via the `/public` route
