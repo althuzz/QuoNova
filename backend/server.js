@@ -673,13 +673,32 @@ app.post('/api/chat', async (req, res) => {
       return res.status(400).json({ message: 'Message is required' });
     }
 
+    // Try Gemini AI first if API Key is configured
+    try {
+      if (process.env.GEMINI_API_KEY) {
+        console.log('Using Gemini AI for chat...');
+        const response = await geminiService.sendMessage(message, chatHistory);
+        return res.json({
+          message: 'Success',
+          response: response,
+          timestamp: new Date().toISOString(),
+          provider: 'gemini'
+        });
+      }
+    } catch (geminiError) {
+      console.error('Gemini AI failed, falling back to Mock AI:', geminiError.message);
+      // Fallback to Mock AI continues below...
+    }
+
+    console.log('Using Mock Legal AI (Offline mode)...');
     // Send message to Mock Legal AI
     const response = await mockLegalAI.sendMessage(message);
 
     res.json({
       message: 'Success',
       response: response,
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
+      provider: 'mock-ai'
     });
   } catch (error) {
     console.error('Chat API Error:', error);
