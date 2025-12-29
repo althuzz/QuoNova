@@ -145,7 +145,7 @@ const Home = () => {
                             </motion.div>
                         </Link>
 
-                        {/* Card 3 - AI Assistant */}
+                        {/* Card 3 - BNS Bridge */}
                         <Link to="/legal-ai">
                             <motion.div
                                 initial={{ opacity: 0, y: 20, rotate: -2 }}
@@ -159,11 +159,11 @@ const Home = () => {
                                         <div className="w-10 h-10 md:w-12 md:h-12 bg-slate-100 rounded-xl flex items-center justify-center mb-3 md:mb-4">
                                             <Gavel className="text-slate-900" size={20} />
                                         </div>
-                                        <h3 className="text-slate-900 font-bold text-lg md:text-xl mb-2">AI Assistant</h3>
-                                        <p className="text-slate-600 text-xs md:text-sm">Get instant answers to your legal queries powered by AI</p>
+                                        <h3 className="text-slate-900 font-bold text-lg md:text-xl mb-2">BNS Bridge</h3>
+                                        <p className="text-slate-600 text-xs md:text-sm">Instant IPC to BNS converter with key insights & differences</p>
                                     </div>
                                     <div className="flex items-center gap-2 text-slate-900 text-xs md:text-sm font-semibold">
-                                        <span>Ask AI</span>
+                                        <span>Convert Laws</span>
                                         <ArrowRight size={14} />
                                     </div>
                                 </div>

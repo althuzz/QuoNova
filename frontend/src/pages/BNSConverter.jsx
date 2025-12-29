@@ -6,6 +6,44 @@ import RobotMascot from '../components/RobotMascot';
 
 const BNSConverter = () => {
     const [searchTerm, setSearchTerm] = useState("");
+    const [explanation, setExplanation] = useState({ id: null, text: "", loading: false });
+
+    const handleRequestDemo = () => {
+        window.location.href = "mailto:demo@legalai.tech?subject=Requesting BNS Bridge Demo";
+    };
+
+    const handleExplain = async (item) => {
+        if (explanation.id === item.ipc && explanation.text) {
+            setExplanation({ id: null, text: "", loading: false }); // Toggle off
+            return;
+        }
+
+        setExplanation({ id: item.ipc, text: "", loading: true });
+
+        try {
+            const response = await fetch('/api/chat', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    message: `Validating my understanding of the new Indian laws. specifically the transition from IPC to BNS.
+                    
+                    Explain the changes between:
+                    IPC Section: ${item.ipc}
+                    BNS Section: ${item.bns}
+                    Title: ${item.title}
+                    Noted Change: ${item.change}
+                    
+                    Please provide a concise, expert legal summary of why this change offers, any nuance in language, or shift in legal philosophy.`
+                }),
+            });
+
+            const data = await response.json();
+            setExplanation({ id: item.ipc, text: data.reply, loading: false });
+        } catch (error) {
+            console.error("AI Error:", error);
+            setExplanation({ id: item.ipc, text: "System is currently offline or unreachable.", loading: false });
+        }
+    };
 
     const filteredResults = bnsData.filter(item =>
         item.ipc.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -28,7 +66,10 @@ const BNSConverter = () => {
                     <span className="font-bold tracking-widest text-xs uppercase">System.Bridge.v2</span>
                 </div>
                 <div className="text-[10px] tracking-tight text-slate-400">STATUS: ONLINE // LATENCY: 12ms</div>
-                <button className="border border-black px-4 py-1 text-xs hover:bg-black hover:text-white transition-colors uppercase font-bold">
+                <button
+                    onClick={handleRequestDemo}
+                    className="border border-black px-4 py-1 text-xs hover:bg-black hover:text-white transition-colors uppercase font-bold"
+                >
                     Request Demo
                 </button>
             </div>
@@ -57,7 +98,7 @@ const BNSConverter = () => {
                             </h1>
 
                             <p className="max-w-md text-sm text-slate-500 font-sans leading-relaxed border-l-2 border-black pl-4 py-2 mt-8">
-                                Simulating the transition from <span className="font-bold text-black">IPC 1860</span> to <span className="font-bold text-black">BNS 2023</span>. Analyze legal codebases with precision.
+                                Simulating the transition from <span className="font-bold text-black">IPC 1860</span> to the corresponding <span className="font-bold text-black">BNS 2023</span>. Analyze legal codebases with precision.
                             </p>
                         </div>
 
@@ -189,6 +230,37 @@ const BNSConverter = () => {
                                                             <p className="text-[10px] font-mono">{item.keralaCases}</p>
                                                         </div>
                                                     )}
+
+                                                    {/* AI Analysis Button & Content */}
+                                                    <div className="pt-4 border-t border-black/10 mt-4">
+                                                        <button
+                                                            onClick={() => handleExplain(item)}
+                                                            className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest hover:bg-black hover:text-white px-3 py-2 border border-black transition-colors"
+                                                        >
+                                                            <Sparkles size={12} />
+                                                            {explanation.id === item.ipc && explanation.loading ? 'ANALYZING...' :
+                                                                explanation.id === item.ipc ? 'CLOSE ANALYSIS' : 'EXPLAIN WITH AI'}
+                                                        </button>
+
+                                                        <AnimatePresence>
+                                                            {explanation.id === item.ipc && !explanation.loading && (
+                                                                <motion.div
+                                                                    initial={{ opacity: 0, height: 0 }}
+                                                                    animate={{ opacity: 1, height: 'auto' }}
+                                                                    exit={{ opacity: 0, height: 0 }}
+                                                                    className="overflow-hidden"
+                                                                >
+                                                                    <div className="mt-4 p-4 bg-black/5 border border-black/10 text-xs font-mono leading-relaxed whitespace-pre-wrap">
+                                                                        <div className="flex items-center gap-2 mb-2 text-black font-bold">
+                                                                            <div className="w-1.5 h-1.5 bg-black rounded-full animate-pulse"></div>
+                                                                            AI INSIGHTS
+                                                                        </div>
+                                                                        {explanation.text}
+                                                                    </div>
+                                                                </motion.div>
+                                                            )}
+                                                        </AnimatePresence>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
