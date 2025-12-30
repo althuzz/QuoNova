@@ -1587,7 +1587,596 @@ const quizzes = [
         ],
         "correctAnswer": 1
       }
-    ]
+    ,
+  {
+    "id": 701,
+    "topic": "criminal",
+    "question": "Who defined a crime as an act committed or omitted in violation of a public law forbidding or commanding it?",
+    "options": [
+      "Sir William Blackstone",
+      "Kenny",
+      "Professor Goodhart",
+      "Sir James Fitz James Stephen"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 702,
+    "topic": "criminal",
+    "question": "When was the First Law Commission appointed in India?",
+    "options": [
+      "1860",
+      "1835",
+      "1933",
+      "1833"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 703,
+    "topic": "criminal",
+    "question": "Who was the Chairman of the First Law Commission of India?",
+    "options": [
+      "Lord Cornwallis",
+      "Sir James Stephen",
+      "Lord T.B. Macaulay",
+      "Sir William Blackstone"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 704,
+    "topic": "criminal",
+    "question": "The Bharatiya Nyaya Sanhita (BNS) consists of how many sections?",
+    "options": [
+      "395",
+      "465",
+      "358",
+      "511"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 705,
+    "topic": "criminal",
+    "question": "Which maxim expresses the fundamental principle that an act does not make a person guilty unless their mind is also guilty?",
+    "options": [
+      "De minimis non curat lex",
+      "Ignorantia facti excusat",
+      "Actus non facit reum nisi mens sit rea",
+      "Respondeat superior"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 706,
+    "topic": "criminal",
+    "question": "Actus reus refers to which essential element of a crime?",
+    "options": [
+      "Guilty mind",
+      "The physical result of human conduct prohibited by law",
+      "A moral wrong",
+      "An involuntary movement"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 707,
+    "topic": "criminal",
+    "question": "If a somnambulist (sleepwalker) sets fire to a house, they are not liable because the act was:",
+    "options": [
+      "Done in good faith",
+      "Involuntary",
+      "A mistake of fact",
+      "A private frolic"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 708,
+    "topic": "criminal",
+    "question": "Which term is defined as \"want of care\" where a person fails to act as a prudent man?",
+    "options": [
+      "Recklessness",
+      "Negligence",
+      "Intention",
+      "Knowledge"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 709,
+    "topic": "criminal",
+    "question": "Section 2(7) of the BNS defines which term related to causing wrongful gain or loss?",
+    "options": [
+      "Fraudulently",
+      "Voluntarily",
+      "Dishonestly",
+      "Negligently"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 710,
+    "topic": "criminal",
+    "question": "What is \"wrongful gain\" as defined by Section 2(36) of the BNS?",
+    "options": [
+      "Gain by lawful means of property to which one is entitled",
+      "Gain by unlawful means of property to which the person gaining is not legally entitled",
+      "Any increase in personal wealth",
+      "Retention of property with the owner's consent"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 711,
+    "topic": "criminal",
+    "question": "Which term is used when a person does a thing with the intent to defraud but not otherwise?",
+    "options": [
+      "Dishonestly",
+      "Voluntarily",
+      "Fraudulently",
+      "Maliciously"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 712,
+    "topic": "criminal",
+    "question": "In the case of State of Maharashtra v. M.H. George, the Supreme Court restorative a conviction for bringing gold into India based on:",
+    "options": [
+      "The doctrine of necessity",
+      "Lack of mens rea being irrelevant for a statutory prohibition",
+      "Private defence",
+      "Mistake of law being a valid excuse"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 713,
+    "topic": "criminal",
+    "question": "The Territorial Waters of India extend to how many nautical miles from the base line?",
+    "options": [
+      "10",
+      "12",
+      "24",
+      "200"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 714,
+    "topic": "criminal",
+    "question": "Section 3(5) of the BNS deals with liability based on:",
+    "options": [
+      "Private defence",
+      "Common intention",
+      "Negligence",
+      "Mistake of fact"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 715,
+    "topic": "criminal",
+    "question": "Which of the following is NOT a form of punishment under Section 4 of the BNS?",
+    "options": [
+      "Forfeiture of property",
+      "Community Service",
+      "Solitary confinement as a primary punishment",
+      "Imprisonment for life"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 716,
+    "topic": "criminal",
+    "question": "In which landmark case did the Supreme Court hold that the death sentence should be given only in the \"rarest of rare cases\"?",
+    "options": [
+      "Mithu v. State of Punjab",
+      "Bachan Singh v. State of Punjab",
+      "R. v. Govinda",
+      "M.C. Mehta v. Union of India"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 717,
+    "topic": "criminal",
+    "question": "According to Section 71 of the BNS, \"imprisonment for life\" means:",
+    "options": [
+      "Imprisonment for 14 years",
+      "Imprisonment for 20 years",
+      "Imprisonment for the remainder of that person’s natural life",
+      "Imprisonment until the Governor commutes the sentence"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 718,
+    "topic": "criminal",
+    "question": "Solitary confinement must not exceed how many months in total for a single sentence?",
+    "options": [
+      "One month",
+      "Three months",
+      "Six months",
+      "Twelve months"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 719,
+    "topic": "criminal",
+    "question": "Which theory of punishment aims to \"gratify the desire for vengeance\" in the victim?",
+    "options": [
+      "Preventive Theory",
+      "Deterrent Theory",
+      "Retributive Theory",
+      "Reformative Theory"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 720,
+    "topic": "criminal",
+    "question": "The maxim \"Ignorantia facti excusat\" means:",
+    "options": [
+      "Ignorance of law is an excuse",
+      "Ignorance of fact is an excuse",
+      "Ignorance of law is not an excuse",
+      "Ignorance of fact is not an excuse"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 721,
+    "topic": "criminal",
+    "question": "Under the BNS, nothing is an offence which is done by a child under what age?",
+    "options": [
+      "Seven years",
+      "Twelve years",
+      "Eighteen years",
+      "Ten years"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 722,
+    "topic": "criminal",
+    "question": "A child between the ages of 7 and 12 is not liable for an offence if they:",
+    "options": [
+      "Acted under a mistake of fact",
+      "Have not attained sufficient mental maturity to judge the nature of their conduct",
+      "Acted in self-defence",
+      "Acted with the consent of a guardian"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 723,
+    "topic": "criminal",
+    "question": "Which legal test is used as the foundation for the law of insanity in India?",
+    "options": [
+      "The Neighbor Principle",
+      "The M’Naghten Rules",
+      "The Pigeon-hole Theory",
+      "The Rule of Strict Liability"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 724,
+    "topic": "criminal",
+    "question": "Involuntary drunkenness is a defence only if the intoxicating substance was administered:",
+    "options": [
+      "By a doctor",
+      "Without the person's knowledge or against their will",
+      "For a religious ritual",
+      "During a wedding party"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 725,
+    "topic": "criminal",
+    "question": "To consent to take the risk of harm under Section 25 of the BNS, a person must be above:",
+    "options": [
+      "12 years of age",
+      "16 years of age",
+      "18 years of age",
+      "21 years of age"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 726,
+    "topic": "criminal",
+    "question": "In R. v. Dudley and Stephens, the court rejected which defence regarding the killing of a boy for food?",
+    "options": [
+      "Insanity",
+      "Accident",
+      "Necessity",
+      "Private Defence"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 727,
+    "topic": "criminal",
+    "question": "The right of private defence is primarily:",
+    "options": [
+      "A punitive right",
+      "A retributive right",
+      "A defensive right",
+      "A right to revenge"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 728,
+    "topic": "criminal",
+    "question": "Private defence is NOT available against a public servant acting in good faith unless there is apprehension of:",
+    "options": [
+      "Simple hurt",
+      "Theft",
+      "Death or grievous hurt",
+      "Damage to property"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 729,
+    "topic": "criminal",
+    "question": "The right of private defence of the body extends to causing death if there is a reasonable apprehension of:",
+    "options": [
+      "Simple assault",
+      "Theft of a cycle",
+      "Kidnapping or abduction",
+      "Verbal abuse"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 730,
+    "topic": "criminal",
+    "question": "Which section provides the right to cause death in private defence against an acid attack?",
+    "options": [
+      "Section 100",
+      "Section 38(g)",
+      "Section 147",
+      "Section 124"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 731,
+    "topic": "criminal",
+    "question": "A person is an \"abettor\" if they instigate, engage in a conspiracy, or:",
+    "options": [
+      "Report the crime to police",
+      "Intentionally aid the commission of an offence",
+      "Watch the crime happen",
+      "Are present at the scene by accident"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 732,
+    "topic": "criminal",
+    "question": "The minimum number of persons required to constitute a criminal conspiracy is:",
+    "options": [
+      "One",
+      "Two",
+      "Five",
+      "Ten"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 733,
+    "topic": "criminal",
+    "question": "Which section of the BNS defines the offence of rape?",
+    "options": [
+      "Section 375",
+      "Section 63",
+      "Section 101",
+      "Section 80"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 734,
+    "topic": "criminal",
+    "question": "Sexual intercourse by a man with his own wife is NOT rape if the wife is not under:",
+    "options": [
+      "12 years of age",
+      "15 years of age",
+      "18 years of age",
+      "21 years of age"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 735,
+    "topic": "criminal",
+    "question": "For a death to be classified as \"dowry death,\" it must occur within how many years of marriage?",
+    "options": [
+      "Five years",
+      "Seven years",
+      "Ten years",
+      "Three years"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 736,
+    "topic": "criminal",
+    "question": "A second marriage during the lifetime of a spouse is bigamy and punishable with imprisonment for:",
+    "options": [
+      "3 years",
+      "7 years",
+      "10 years",
+      "Life"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 737,
+    "topic": "criminal",
+    "question": "\"Culpable homicide\" is defined in which section of the BNS?",
+    "options": [
+      "Section 101",
+      "Section 100",
+      "Section 302",
+      "Section 299"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 738,
+    "topic": "criminal",
+    "question": "The \"Doctrine of Transfer of Malice\" is embodied in which section?",
+    "options": [
+      "Section 34",
+      "Section 100",
+      "Section 102",
+      "Section 149"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 739,
+    "topic": "criminal",
+    "question": "Under the BNS, \"hit and run\" cases where the driver fails to report the incident to police or a Magistrate can be punished with imprisonment up to:",
+    "options": [
+      "2 years",
+      "5 years",
+      "7 years",
+      "10 years"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 740,
+    "topic": "criminal",
+    "question": "To constitute an \"Organised Crime Syndicate,\" a group must consist of how many persons?",
+    "options": [
+      "Five or more",
+      "Two or more",
+      "Ten or more",
+      "Three or more"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 741,
+    "topic": "criminal",
+    "question": "An act is considered \"Grievous Hurt\" if it causes the sufferer to be in severe bodily pain or unable to follow ordinary pursuits for:",
+    "options": [
+      "7 days",
+      "15 days",
+      "20 days",
+      "30 days"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 742,
+    "topic": "criminal",
+    "question": "What is the main difference between wrongful restraint and wrongful confinement?",
+    "options": [
+      "Restraint is total; Confinement is partial",
+      "Restraint is partial; Confinement is total",
+      "Restraint applies only to property",
+      "Confinement applies only to children"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 743,
+    "topic": "criminal",
+    "question": "Which offence involves making a gesture or preparation that causes another to apprehend the use of criminal force?",
+    "options": [
+      "Battery",
+      "Assault",
+      "Affray",
+      "Rioting"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 744,
+    "topic": "criminal",
+    "question": "\"Kidnapping from India\" involves conveying a person beyond the limits of India without the consent of:",
+    "options": [
+      "The person or their legal authorized representative",
+      "The Central Government",
+      "The Police",
+      "The local Magistrate"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 745,
+    "topic": "criminal",
+    "question": "Waging war against the Government of India (Treason) is punishable under:",
+    "options": [
+      "Section 121",
+      "Section 147",
+      "Section 152",
+      "Section 189"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 746,
+    "topic": "criminal",
+    "question": "How many persons are required to constitute an \"Unlawful Assembly\"?",
+    "options": [
+      "Two",
+      "Three",
+      "Five",
+      "Seven"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 747,
+    "topic": "criminal",
+    "question": "When force or violence is used by an unlawful assembly in prosecution of a common object, it is called:",
+    "options": [
+      "Affray",
+      "Assault",
+      "Rioting",
+      "Criminal Trespass"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 748,
+    "topic": "criminal",
+    "question": "An \"Affray\" must occur in which type of location?",
+    "options": [
+      "Private house",
+      "Police station",
+      "Public place",
+      "High court"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 749,
+    "topic": "criminal",
+    "question": "The offence of theft is complete as soon as the property is:",
+    "options": [
+      "Sold to a third party",
+      "Taken out of the city",
+      "Moved in order to facilitate the taking",
+      "Hidden in the owner's house"
+    ],
+    "correctAnswer": 2
+  }
+]
   }
 ];
 
@@ -1674,6 +2263,7 @@ app.get('/api/notes', (req, res) => {
           name: 'Law of Contracts',
           resources: {
             notes: [
+              { title: 'Syllabus', url: `${req.protocol}://${req.get('host')}/public/notes/Syllabus_Contracts.html` },
               { title: 'Law Of Contracts 1 - Anil K Nair', url: `${req.protocol}://${req.get('host')}/public/notes/Law Of Contracts 1-Anil K Nair.pdf` }
             ],
             previousQns: [
@@ -1686,7 +2276,8 @@ app.get('/api/notes', (req, res) => {
           id: 'torts',
           name: 'Law of Torts',
           resources: {
-            notes: [{ title: 'Law of Torts - Anil K Nair', url: `${req.protocol}://${req.get('host')}/public/notes/Law of Torts -Anil K Nair.pdf` }],
+            notes: [
+              { title: 'Syllabus', url: `${req.protocol}://${req.get('host')}/public/notes/Syllabus_Torts.html` },{ title: 'Law of Torts - Anil K Nair', url: `${req.protocol}://${req.get('host')}/public/notes/Law of Torts -Anil K Nair.pdf` }],
             previousQns: [
               { title: '2023 Previous Year Paper - CP02', url: `${req.protocol}://${req.get('host')}/public/notes/2023 Previous Year Paper- CP02.pdf` },
               { title: '2022 Previous Year Paper - CP02', url: `${req.protocol}://${req.get('host')}/public/notes/2022 Previous Year Paper- CP02.pdf` }
@@ -1697,7 +2288,8 @@ app.get('/api/notes', (req, res) => {
           id: 'consti1',
           name: 'Constitutional Law 1',
           resources: {
-            notes: [{ title: 'Constitutional_Law_1.pdf', url: `${req.protocol}://${req.get('host')}/public/notes/Constitutional_Law_1.pdf` }],
+            notes: [
+              { title: 'Syllabus', url: `${req.protocol}://${req.get('host')}/public/notes/Syllabus_Constitutional_Law_1.html` },{ title: 'Constitutional_Law_1.pdf', url: `${req.protocol}://${req.get('host')}/public/notes/Constitutional_Law_1.pdf` }],
             previousQns: [
               { title: '2023 Previous Year Paper - CP03', url: `${req.protocol}://${req.get('host')}/public/notes/2023 Previous Year Paper- CP03.pdf` },
               { title: '2022 Previous Year Paper - CP03', url: `${req.protocol}://${req.get('host')}/public/notes/2022 Previous Year Paper- CP03.pdf` }
@@ -1708,7 +2300,8 @@ app.get('/api/notes', (req, res) => {
           id: 'family1',
           name: 'Family Law 1',
           resources: {
-            notes: [{ title: 'Family Law 1 - Anil K Nair', url: `${req.protocol}://${req.get('host')}/public/notes/Family Law 1 -Anil K Nair.pdf` }],
+            notes: [
+              { title: 'Syllabus', url: `${req.protocol}://${req.get('host')}/public/notes/Syllabus_Family_Law_1.html` },{ title: 'Family Law 1 - Anil K Nair', url: `${req.protocol}://${req.get('host')}/public/notes/Family Law 1 -Anil K Nair.pdf` }],
             previousQns: [
               { title: '2023 Previous Year Paper - CP04', url: `${req.protocol}://${req.get('host')}/public/notes/2023 Previous Year Paper- CP04.pdf` },
               { title: '2022 Previous Year Paper - CP04', url: `${req.protocol}://${req.get('host')}/public/notes/2022 Previous Year Paper- CP04.pdf` }
@@ -1719,7 +2312,8 @@ app.get('/api/notes', (req, res) => {
           id: 'crimes1',
           name: 'Law of Crimes 1',
           resources: {
-            notes: [{ title: 'BNS - Anil K Nair', url: `${req.protocol}://${req.get('host')}/public/notes/BNS ANIL K NAIR.pdf` }],
+            notes: [
+              { title: 'Syllabus', url: `${req.protocol}://${req.get('host')}/public/notes/Syllabus_Law_of_Crimes_1.html` },{ title: 'BNS - Anil K Nair', url: `${req.protocol}://${req.get('host')}/public/notes/BNS ANIL K NAIR.pdf` }],
             previousQns: [
               { title: '2023 Previous Year Paper - CP05', url: `${req.protocol}://${req.get('host')}/public/notes/2023 Previous Year Paper- CP05.pdf` },
               { title: '2022 Previous Year Paper - CP05', url: `${req.protocol}://${req.get('host')}/public/notes/2022 Previous Year Paper- CP05.pdf` }
@@ -1730,7 +2324,8 @@ app.get('/api/notes', (req, res) => {
           id: 'legal_lang',
           name: 'Legal Language and Legal Writing',
           resources: {
-            notes: [{ title: 'Legal Language & Legal Writing - Anil K Nair', url: `${req.protocol}://${req.get('host')}/public/notes/Legal Language & Legal Writing-Anil K Nair.pdf` }],
+            notes: [
+              { title: 'Syllabus', url: `${req.protocol}://${req.get('host')}/public/notes/Syllabus_Legal_Language.html` },{ title: 'Legal Language & Legal Writing - Anil K Nair', url: `${req.protocol}://${req.get('host')}/public/notes/Legal Language & Legal Writing-Anil K Nair.pdf` }],
             previousQns: [
               { title: '2023 Previous Year Paper - OP1', url: `${req.protocol}://${req.get('host')}/public/notes/2023 Previous Year Paper- OP01.pdf` },
               { title: '2022 Previous Year Paper - OP1', url: `${req.protocol}://${req.get('host')}/public/notes/2022 Previous Year Paper- OP01.pdf` }
