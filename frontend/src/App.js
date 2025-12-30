@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './pages/Home';
 import Quiz from './pages/Quiz';
-import Leaderboard from './pages/Leaderboard';
+import Definitions from './pages/Definitions';
 import LegalNotes from './pages/LegalNotes';
 import Feedback from './pages/Feedback';
 import AuthPage from './pages/AuthPage';
@@ -17,7 +17,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="quiz" element={<Quiz />} />
-          <Route path="leaderboard" element={<Leaderboard />} />
+          <Route path="definitions" element={<Definitions />} />
           <Route path="notes" element={<LegalNotes />} />
           <Route path="feedback" element={<Feedback />} />
           <Route path="auth" element={<AuthPage />} />

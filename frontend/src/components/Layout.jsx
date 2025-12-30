@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Outlet, Link, useLocation, useNavigate } from 'react-router-dom';
-import { Gavel, Menu, X, BookOpen, MessageSquare, Award, User, LogOut, Scale } from 'lucide-react';
+import { Gavel, Menu, X, BookOpen, MessageSquare, Award, User, LogOut, Scale, Quote } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Layout = () => {
@@ -36,7 +36,7 @@ const Layout = () => {
         { path: '/quiz', label: 'Start Quiz', icon: null },
         { path: '/notes', label: 'Legal Notes', icon: BookOpen },
         { path: '/legal-ai', label: 'BNS Bridge', icon: Scale },
-        { path: '/leaderboard', label: 'Leaderboard', icon: Award },
+        { path: '/definitions', label: 'Definitions', icon: Quote },
         { path: '/feedback', label: 'Feedback', icon: MessageSquare },
     ];
 
@@ -62,7 +62,7 @@ const Layout = () => {
                             <Link to="/quiz" className="text-slate-600 font-medium hover:text-slate-900 transition-colors text-sm uppercase tracking-wide">Quiz</Link>
                             <Link to="/notes" className="text-slate-600 font-medium hover:text-slate-900 transition-colors text-sm uppercase tracking-wide">Notes</Link>
                             <Link to="/legal-ai" className="text-slate-600 font-medium hover:text-slate-900 transition-colors text-sm uppercase tracking-wide">BNS Bridge</Link>
-                            <Link to="/leaderboard" className="text-slate-600 font-medium hover:text-slate-900 transition-colors text-sm uppercase tracking-wide">Rankings</Link>
+                            <Link to="/definitions" className="text-slate-600 font-medium hover:text-slate-900 transition-colors text-sm uppercase tracking-wide">Definitions</Link>
                             <Link to="/feedback" className="text-slate-600 font-medium hover:text-slate-900 transition-colors text-sm uppercase tracking-wide">Feedback</Link>
 
                             {user ? (
@@ -115,7 +115,7 @@ const Layout = () => {
                                 <Link to="/quiz" className="block px-4 py-3 rounded-lg text-slate-700 hover:bg-slate-50 hover:text-slate-900 border border-transparent hover:border-slate-200 transition-all font-medium" onClick={() => setIsMobileMenuOpen(false)}>Quiz</Link>
                                 <Link to="/notes" className="block px-4 py-3 rounded-lg text-slate-700 hover:bg-slate-50 hover:text-slate-900 border border-transparent hover:border-slate-200 transition-all font-medium" onClick={() => setIsMobileMenuOpen(false)}>Legal Notes</Link>
                                 <Link to="/legal-ai" className="block px-4 py-3 rounded-lg text-slate-700 hover:bg-slate-50 hover:text-slate-900 border border-transparent hover:border-slate-200 transition-all font-medium" onClick={() => setIsMobileMenuOpen(false)}>BNS Bridge</Link>
-                                <Link to="/leaderboard" className="block px-4 py-3 rounded-lg text-slate-700 hover:bg-slate-50 hover:text-slate-900 border border-transparent hover:border-slate-200 transition-all font-medium" onClick={() => setIsMobileMenuOpen(false)}>Leaderboard</Link>
+                                <Link to="/definitions" className="block px-4 py-3 rounded-lg text-slate-700 hover:bg-slate-50 hover:text-slate-900 border border-transparent hover:border-slate-200 transition-all font-medium" onClick={() => setIsMobileMenuOpen(false)}>Definitions</Link>
                                 <Link to="/feedback" className="block px-4 py-3 rounded-lg text-slate-700 hover:bg-slate-50 hover:text-slate-900 border border-transparent hover:border-slate-200 transition-all font-medium" onClick={() => setIsMobileMenuOpen(false)}>Feedback</Link>
                                 {user ? (
                                     <button

@@ -214,7 +214,7 @@ const Home = () => {
             >
                 <div className="w-24 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent mx-auto mb-8"></div>
                 <p className="text-xs font-bold text-slate-400 tracking-[0.3em] uppercase opacity-70">
-                    Dedicated to <span className="text-slate-800 font-black">3/1A GLCT</span>
+                    Dedicated to <span className="text-slate-800 font-black">Law Students</span>
                 </p>
             </motion.div>
         </motion.div >

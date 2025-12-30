@@ -92,9 +92,9 @@ const BNSConverter = () => {
                             </motion.div>
 
                             <h1 className="text-6xl md:text-8xl font-black tracking-tighter leading-[0.8]">
-                                FIX.<br />
-                                <span className="outline-text text-transparent bg-clip-text" style={{ WebkitTextStroke: '2px black' }}>LEARN.</span><br />
-                                PREVENT.
+                                IPC1860.<br />
+                                <span className="outline-text text-transparent bg-clip-text" style={{ WebkitTextStroke: '2px black' }}>TO.</span><br />
+                                BNS2023.
                             </h1>
 
                             <p className="max-w-md text-sm text-slate-500 font-sans leading-relaxed border-l-2 border-black pl-4 py-2 mt-8">
@@ -188,7 +188,7 @@ const BNSConverter = () => {
 
                                         {/* IPC Node */}
                                         <div className="p-8 border-b md:border-b-0 md:border-r border-black/10 relative overflow-hidden">
-                                            <div className="absolute top-2 left-2 text-[10px] font-bold bg-black text-white px-1">INPUT</div>
+                                            <div className="absolute top-2 left-2 text-[10px] font-bold bg-black text-white px-1">IPC</div>
                                             <div className="flex flex-col h-full justify-center">
                                                 <div className="text-xs uppercase text-slate-400 mb-1">IPC 1860</div>
                                                 <div className="text-4xl font-black">{item.ipc}</div>
@@ -208,7 +208,7 @@ const BNSConverter = () => {
 
                                         {/* BNS Node & Info */}
                                         <div className="p-8 border-t md:border-t-0 md:border-l border-black/10 bg-white relative">
-                                            <div className="absolute top-2 right-2 text-[10px] font-bold border border-black px-1">OUTPUT</div>
+                                            <div className="absolute top-2 right-2 text-[10px] font-bold border border-black px-1">BNS</div>
 
                                             <div className="grid md:grid-cols-[auto_1fr] gap-8">
                                                 <div>
