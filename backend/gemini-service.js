@@ -1,7 +1,5 @@
-const { GoogleGenerativeAI } = require('@google/generative-ai');
-
-// Initialize Gemini AI
-const genAI = new GoogleGenerativeAI((process.env.GEMINI_API_KEY || '').trim());
+const { generateText } = require('ai');
+const { google } = require('@ai-sdk/google');
 
 // System prompt for legal context
 const LEGAL_SYSTEM_PROMPT = `You are a knowledgeable Indian legal assistant specializing in Indian law, including the Constitution of India, Indian Penal Code (IPC), Bharatiya Nyaya Sanhita (BNS 2023), and landmark Supreme Court cases.
@@ -17,7 +15,7 @@ Your role:
 Format your responses clearly with proper structure when listing cases or providing details.`;
 
 /**
- * Send a message to Gemini AI and get a response
+ * Send a message to Gemini AI via Vercel AI SDK
  * @param {string} message - User's message
  * @param {Array} chatHistory - Previous chat messages for context
  * @returns {Promise<string>} - AI response
@@ -29,58 +27,37 @@ async function sendMessage(message, chatHistory = []) {
             throw new Error('GEMINI_API_KEY not configured in environment variables');
         }
 
-        // List of models to try in order
-        const modelsToTry = ['gemini-1.5-flash', 'gemini-1.5-pro', 'gemini-pro'];
+        console.log('Using Vercel AI SDK with Google Provider...');
 
-        let lastError;
-        for (const modelName of modelsToTry) {
-            try {
-                console.log(`Trying Gemini model: ${modelName}`);
-                const model = genAI.getGenerativeModel({ model: modelName });
+        // Convert chat history to Vercel SDK format if needed, 
+        // but generateText is stateless mostly, so we just append context or use messages if using streamText (but we want simple text here)
+        // For simple generateText, we can just prepend history as context or use the 'messages' parameter if supported, 
+        // but generateText is single-turn oriented or takes a system prompt.
+        // Better approach: Construct a prompt with history manually or use the multi-shot prompt.
 
-                // Build conversation history
-                const history = chatHistory.map(msg => ({
-                    role: msg.role === 'user' ? 'user' : 'model',
-                    parts: [{ text: msg.content }]
-                }));
-
-                // Start chat with history
-                const chat = model.startChat({
-                    history: [
-                        { role: 'user', parts: [{ text: LEGAL_SYSTEM_PROMPT }] },
-                        { role: 'model', parts: [{ text: 'Understood. I am ready to assist with Indian legal queries, case law, and constitutional matters. How may I help you today?' }] },
-                        ...history
-                    ],
-                });
-
-                const result = await chat.sendMessage(message);
-                const response = await result.response;
-                return response.text();
-            } catch (error) {
-                console.error(`Model ${modelName} failed:`, error.message);
-                lastError = error;
-                // Continue to next model
-            }
+        // Simple context construction
+        let fullPrompt = message;
+        if (chatHistory.length > 0) {
+            fullPrompt = "Chat History:\n" + chatHistory.map(m => `${m.role}: ${m.content}`).join("\n") + "\n\nUser: " + message;
         }
 
-        // If all models fail, throw the last error
-        throw lastError;
+        const { text } = await generateText({
+            model: google('gemini-1.5-flash'), // or gemini-pro
+            system: LEGAL_SYSTEM_PROMPT,
+            prompt: fullPrompt,
+            apiKey: process.env.GEMINI_API_KEY
+        });
+
+        return text;
+
     } catch (error) {
-        console.error('Gemini API Error:', error);
-        console.error('Error details:', error.message);
-        console.error('Error stack:', error.stack);
+        console.error('Vercel AI SDK Error:', error);
 
-        // Handle specific error cases
-        if (error.message?.includes('API_KEY') || error.message?.includes('API key')) {
-            throw new Error('Invalid or missing Gemini API key. Please check your configuration.');
+        if (error.message?.includes('API_KEY')) {
+            throw new Error('Invalid or missing API key.');
         }
 
-        if (error.message?.includes('quota') || error.message?.includes('RESOURCE_EXHAUSTED')) {
-            throw new Error('API quota exceeded. Please try again later.');
-        }
-
-        // Return the actual error message for debugging
-        throw new Error(error.message || 'Failed to get AI response. Please try again.');
+        throw new Error(error.message || 'Failed to get AI response.');
     }
 }
 
