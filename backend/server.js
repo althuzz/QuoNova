@@ -461,6 +461,1131 @@ const quizzes = [
         question: 'What is the punishment for tempering with computer resource documents under Information Technology Act?',
         options: ['Imprisonment upto three years or with fine which may extend upto two lakh rupees or with both', 'Imprisonment upto two years or with fine which may extend upto one lakh rupees or with both', 'Imprisonment upto one year or with fine which may extend upto one lakh rupees or with both', 'Imprisonment upto five years or with fine which may extend upto five lakh rupees or with both'],
         correctAnswer: 0
+      },
+
+      // Torts Questions
+      {
+        id: 501,
+        topic: 'tort',
+        question: 'The word "Tort" is derived from which Latin term?',
+        options: ['Tortum', 'Tortuous', 'Torts', 'Turpitude'],
+        correctAnswer: 0
+      },
+      {
+        id: 502,
+        topic: 'tort',
+        question: 'According to Salmond, a tort is a civil wrong for which the remedy is an action for:',
+        options: ['Liquidated damages', 'Unliquidated damages', 'Criminal punishment', 'Specific performance'],
+        correctAnswer: 1
+      },
+      {
+        id: 503,
+        topic: 'tort',
+        question: 'Which maxim means "infringement of a legal right without any actual loss or damage"?',
+        options: ['Damnum sine injuria', 'Injuria sine damno', 'Volenti non fit injuria', 'Res ipsa loquitur'],
+        correctAnswer: 1
+      },
+      {
+        id: 504,
+        topic: 'tort',
+        question: 'In which case was the maxim Injuria sine damno first prominently applied?',
+        options: ['Gloucester Grammar School case', 'Ashby v. White', 'Rylands v. Fletcher', 'Donoghue v. Stevenson'],
+        correctAnswer: 1
+      },
+      {
+        id: 505,
+        topic: 'tort',
+        question: 'The Gloucester Grammar School case (1410) is a leading example of:',
+        options: ['Injuria sine damno', 'Vicarious liability', 'Damnum sine injuria', 'Strict liability'],
+        correctAnswer: 2
+      },
+      {
+        id: 506,
+        topic: 'tort',
+        question: 'Who is a prominent supporter of the "Pigeon-hole Theory"?',
+        options: ['Winfield', 'Salmond', 'Fraser', 'Pollock'],
+        correctAnswer: 1
+      },
+      {
+        id: 507,
+        topic: 'tort',
+        question: 'Winfield\'s view on the Law of Torts is often summarized as:',
+        options: ['There is no law of tort, only a law of torts', 'All injuries done to another are torts unless there is some justification', 'Torts are limited to specific labeled categories', 'Tortious liability arises only from breach of contract'],
+        correctAnswer: 1
+      },
+      {
+        id: 508,
+        topic: 'tort',
+        question: 'Which maxim translates to "to a willing person, no injury is done"?',
+        options: ['Respondeat superior', 'Qui facit per alium facit per se', 'Volenti non fit injuria', 'Ex turpi causa non oritur actio'],
+        correctAnswer: 2
+      },
+      {
+        id: 509,
+        topic: 'tort',
+        question: 'Mere knowledge of a danger does not necessarily imply consent to the risk. This is expressed as:',
+        options: ['Scienti non fit injuria', 'Res ipsa loquitur', 'Vis Major', 'Damnum sine injuria'],
+        correctAnswer: 0
+      },
+      {
+        id: 510,
+        topic: 'tort',
+        question: '"Act of God" is also known by the Latin term:',
+        options: ['Vis Major', 'Inevitable Accident', 'Novus actus interveniens', 'Volenti non fit injuria'],
+        correctAnswer: 0
+      },
+      {
+        id: 511,
+        topic: 'tort',
+        question: 'For the defence of "Inevitable Accident" to apply, the defendant must prove:',
+        options: ['The injury was caused by natural forces', 'The accident could not have been avoided by reasonable care', 'The plaintiff consented to the risk', 'The act was authorized by a statute'],
+        correctAnswer: 1
+      },
+      {
+        id: 512,
+        topic: 'tort',
+        question: 'The maxim "Necessitas non habet legem" relates to which defence?',
+        options: ['Private Defence', 'Statutory Authority', 'Necessity', 'Mistake'],
+        correctAnswer: 2
+      },
+      {
+        id: 513,
+        topic: 'tort',
+        question: 'Which maxim forms the basis of vicarious liability, meaning "let the principal be liable"?',
+        options: ['Qui facit per alium facit per se', 'Respondeat superior', 'Actio personalis moritur cum persona', 'Injuria sine damno'],
+        correctAnswer: 1
+      },
+      {
+        id: 514,
+        topic: 'tort',
+        question: 'A master is vicariously liable for the acts of a servant if the act is committed:',
+        options: ['Outside the course of employment', 'During a "private frolic"', 'In the course of employment', 'By an independent contractor'],
+        correctAnswer: 2
+      },
+      {
+        id: 515,
+        topic: 'tort',
+        question: 'In India, a minor (person under 18) can be sued for a tort:',
+        options: ['Only if they have attained the age of 14', 'In the same manner and to the same extent as an adult', 'Only if they acted with malice', 'Never; parents are always liable'],
+        correctAnswer: 1
+      },
+      {
+        id: 516,
+        topic: 'tort',
+        question: 'What is the main difference between "Assault" and "Battery"?',
+        options: ['Assault requires physical contact; Battery does not', 'Battery is an apprehension of force; Assault is the application of force', 'Assault is an apprehension of force; Battery is the actual application of force', 'There is no difference in the law of torts'],
+        correctAnswer: 2
+      },
+      {
+        id: 517,
+        topic: 'tort',
+        question: '"Mayhem" is an action maintainable when a bodily member is lost that:',
+        options: ['Results in death', 'Deprives a person of a fighting limb', 'Only affects the person\'s appearance', 'Is caused by negligence only'],
+        correctAnswer: 1
+      },
+      {
+        id: 518,
+        topic: 'tort',
+        question: 'For "False Imprisonment" to occur, the restraint must be:',
+        options: ['Partial', 'Total', 'For at least 24 hours', 'Conducted by a police officer'],
+        correctAnswer: 1
+      },
+      {
+        id: 519,
+        topic: 'tort',
+        question: 'Which form of defamation is addressed to the eye (permanent form)?',
+        options: ['Slander', 'Libel', 'Innuendo', 'Malicious Falsehood'],
+        correctAnswer: 1
+      },
+      {
+        id: 520,
+        topic: 'tort',
+        question: 'A statement that is prima facie innocent but carries a secondary defamatory meaning is called:',
+        options: ['Slander', 'Privilege', 'Innuendo', 'Deceit'],
+        correctAnswer: 2
+      },
+      {
+        id: 521,
+        topic: 'tort',
+        question: 'In the tort of "Deceit," the defendant must have made a false statement:',
+        options: ['Unintentionally', 'Knowingly, with intent to induce the plaintiff to act', 'About a matter of opinion', 'Without causing any damage'],
+        correctAnswer: 1
+      },
+      {
+        id: 522,
+        topic: 'tort',
+        question: 'Which landmark case established the modern law of Negligence and the "Neighbor Principle"?',
+        options: ['Rylands v. Fletcher', 'Donoghue v. Stevenson', 'Ashby v. White', 'Bourhill v. Young'],
+        correctAnswer: 1
+      },
+      {
+        id: 523,
+        topic: 'tort',
+        question: '"Res Ipsa Loquitur" is a rule of evidence meaning:',
+        options: ['The plaintiff must prove every detail of negligence', 'The thing speaks for itself', 'No liability without fault', 'The burden of proof never shifts'],
+        correctAnswer: 1
+      },
+      {
+        id: 524,
+        topic: 'tort',
+        question: 'If a person\'s own negligence contributed to the damage they suffered, it is called:',
+        options: ['Strict Liability', 'Vicarious Liability', 'Contributory Negligence', 'Composite Tort'],
+        correctAnswer: 2
+      },
+      {
+        id: 525,
+        topic: 'tort',
+        question: 'The rule in Rylands v. Fletcher (1868) deals with:',
+        options: ['Absolute Liability', 'Strict Liability', 'Vicarious Liability', 'Negligence'],
+        correctAnswer: 1
+      },
+      {
+        id: 526,
+        topic: 'tort',
+        question: 'Which of the following is an essential for Strict Liability?',
+        options: ['Natural use of land', 'Escape of a dangerous thing', 'Act of a third party', 'Plaintiff\'s consent'],
+        correctAnswer: 1
+      },
+      {
+        id: 527,
+        topic: 'tort',
+        question: 'The "Rule of Absolute Liability" was propounded by the Supreme Court of India in:',
+        options: ['Rylands v. Fletcher', 'M.C. Mehta v. Union of India', 'Kasturilal v. State of U.P.', 'State of Rajasthan v. Vidhyavathi'],
+        correctAnswer: 1
+      },
+      {
+        id: 528,
+        topic: 'tort',
+        question: 'Animals dangerous by nature are classified as:',
+        options: ['Animals mansuetae naturae', 'Animals ferae naturae', 'Domestic animals', 'Scienter animals'],
+        correctAnswer: 1
+      },
+      {
+        id: 529,
+        topic: 'tort',
+        question: 'The test used to determine if a defendant is liable for consequences following a wrongful act is:',
+        options: ['Test of Directness', 'Test of Reasonable Foresight', 'Both A and B', 'Neither A nor B'],
+        correctAnswer: 2
+      },
+      {
+        id: 530,
+        topic: 'tort',
+        question: 'Which case established that "Directness" is no longer the sole test for remoteness, favoring "Reasonable Foresight"?',
+        options: ['Re Polemis', 'The Wagon Mound Case', 'Scott v. Shepherd', 'Smith v. London and South Western Railway'],
+        correctAnswer: 1
+      },
+      {
+        id: 531,
+        topic: 'tort',
+        question: 'Nervous shock caused by seeing or hearing an event is actionable if:',
+        options: ['It results in a "private frolic"', 'The injury was a reasonably foreseeable consequence', 'The plaintiff was a trespasser', 'No physical injury occurred'],
+        correctAnswer: 1
+      },
+      {
+        id: 532,
+        topic: 'tort',
+        question: '"Malicious Prosecution" requires the plaintiff to prove that the proceedings ended in:',
+        options: ['A conviction', 'Favour of the plaintiff', 'A settlement', 'A mistrial'],
+        correctAnswer: 1
+      },
+      {
+        id: 533,
+        topic: 'tort',
+        question: 'An unlawful interference with a person’s use or enjoyment of land is called:',
+        options: ['Trespass', 'Conversion', 'Nuisance', 'Detinue'],
+        correctAnswer: 2
+      },
+      {
+        id: 534,
+        topic: 'tort',
+        question: 'In "Trespass to Land," the entry must be:',
+        options: ['Intentional and without justification', 'Only by a person, not an object', 'Proven to have caused actual damage', 'Authorized by the owner'],
+        correctAnswer: 0
+      },
+      {
+        id: 535,
+        topic: 'tort',
+        question: '"Trespass ab initio" occurs when a person enters land lawfully but subsequently:',
+        options: ['Leaves immediately', 'Abuses the authority by committing a wrongful act', 'Pays the required fee', 'Corrects a mistake'],
+        correctAnswer: 1
+      },
+      {
+        id: 536,
+        topic: 'tort',
+        question: '"Distress Damage Feasant" allows an occupier of land to:',
+        options: ['Sue for liquidated damages', 'Seize trespassing cattle until compensation is paid', 'Imprison a trespasser', 'Sell the trespassing goods immediately'],
+        correctAnswer: 1
+      },
+      {
+        id: 537,
+        topic: 'tort',
+        question: '"Conversion" (Trover) involves:',
+        options: ['Direct physical interference with goods', 'Dealing with goods in a manner that deprives the owner of use/possession', 'Simply touching someone else\'s property', 'A breach of contract'],
+        correctAnswer: 1
+      },
+      {
+        id: 538,
+        topic: 'tort',
+        question: 'The maxim "Actio personalis moritur cum persona" means:',
+        options: ['A personal right of action dies with the person', 'The law is not concerned with small things', 'One who acts through another acts himself', 'Actionable without proof of damage'],
+        correctAnswer: 0
+      },
+      {
+        id: 539,
+        topic: 'tort',
+        question: '"Passing Off" is a tort designed to protect:',
+        options: ['Personal reputation', 'Commercial goodwill and business reputation', 'Private land from trespassers', 'Consumers from physical injury'],
+        correctAnswer: 1
+      },
+      {
+        id: 540,
+        topic: 'tort',
+        question: 'Which of the following is an "Extra-Judicial Remedy"?',
+        options: ['Damages', 'Injunction', 'Re-entry on land', 'Specific restitution of property'],
+        correctAnswer: 2
+      },
+
+      // Consumer Protection & Motor Vehicles Act
+      {
+        id: 541,
+        topic: 'consumer_law',
+        question: 'Under the Consumer Protection Act 1986, a "Consumer" does NOT include a person who:',
+        options: ['Hires services for a consideration', 'Purchases goods for resale or commercial purposes', 'Uses goods with the approval of the buyer', 'Purchases goods on a deferred payment basis'],
+        correctAnswer: 1
+      },
+      {
+        id: 542,
+        topic: 'consumer_law',
+        question: 'The "District Forum" has jurisdiction to entertain complaints where the value of goods/services does not exceed:',
+        options: ['Rupees five lakhs', 'Rupees ten lakhs', 'Rupees twenty lakhs', 'Rupees one crore'],
+        correctAnswer: 2
+      },
+      {
+        id: 543,
+        topic: 'consumer_law',
+        question: 'A "State Commission" can entertain complaints where the value exceeds 20 lakhs but does not exceed:',
+        options: ['50 lakhs', '1 crore', '2 crores', '5 crores'],
+        correctAnswer: 1
+      },
+      {
+        id: 544,
+        topic: 'consumer_law',
+        question: 'What is the limitation period for filing a complaint in a Consumer Forum?',
+        options: ['One year from the date of cause of action', 'Two years from the date of cause of action', 'Three years from the date of cause of action', 'Six months from the date of cause of action'],
+        correctAnswer: 1
+      },
+      {
+        id: 545,
+        topic: 'consumer_law',
+        question: 'Which of the following is a "Right of Consumers" under the Act?',
+        options: ['Right to Safety', 'Right to be Heard', 'Right to Consumer Education', 'All of the above'],
+        correctAnswer: 3
+      },
+      {
+        id: 546,
+        topic: 'consumer_law',
+        question: 'Section 140 of the Motor Vehicles Act 1988 provides for liability on the principle of:',
+        options: ['Fault liability', 'No-fault liability', 'Vicarious liability', 'Strict liability'],
+        correctAnswer: 1
+      },
+      {
+        id: 547,
+        topic: 'consumer_law',
+        question: 'Under Section 140, the fixed compensation for "death" in a motor accident is:',
+        options: ['Rs. 25,000', 'Rs. 50,000', 'Rs. 1,00,000', 'Rs. 15,000'],
+        correctAnswer: 1
+      },
+      {
+        id: 548,
+        topic: 'consumer_law',
+        question: 'In which chapter of the Motor Vehicles Act 1988 is "compulsory insurance" against third-party risks mentioned?',
+        options: ['Chapter X', 'Chapter XI', 'Chapter XII', 'Chapter XIII'],
+        correctAnswer: 1
+      },
+      {
+        id: 549,
+        topic: 'consumer_law',
+        question: 'An application for compensation in motor accidents is made to the:',
+        options: ['District Court', 'MACT (Motor Accidents Claims Tribunal)', 'Consumer Forum', 'High Court'],
+        correctAnswer: 1
+      },
+      {
+        options: ['Rylands v. Fletcher', 'Donoghue v. Stevenson', 'Ashby v. White', 'Bourhill v. Young'],
+        correctAnswer: 1
+      },
+      {
+        id: 523,
+        topic: 'tort',
+        question: '"Res Ipsa Loquitur" is a rule of evidence meaning:',
+        options: ['The plaintiff must prove every detail of negligence', 'The thing speaks for itself', 'No liability without fault', 'The burden of proof never shifts'],
+        correctAnswer: 1
+      },
+      {
+        id: 524,
+        topic: 'tort',
+        question: 'If a person\'s own negligence contributed to the damage they suffered, it is called:',
+        options: ['Strict Liability', 'Vicarious Liability', 'Contributory Negligence', 'Composite Tort'],
+        correctAnswer: 2
+      },
+      {
+        id: 525,
+        topic: 'tort',
+        question: 'The rule in Rylands v. Fletcher (1868) deals with:',
+        options: ['Absolute Liability', 'Strict Liability', 'Vicarious Liability', 'Negligence'],
+        correctAnswer: 1
+      },
+      {
+        id: 526,
+        topic: 'tort',
+        question: 'Which of the following is an essential for Strict Liability?',
+        options: ['Natural use of land', 'Escape of a dangerous thing', 'Act of a third party', 'Plaintiff\'s consent'],
+        correctAnswer: 1
+      },
+      {
+        id: 527,
+        topic: 'tort',
+        question: 'The "Rule of Absolute Liability" was propounded by the Supreme Court of India in:',
+        options: ['Rylands v. Fletcher', 'M.C. Mehta v. Union of India', 'Kasturilal v. State of U.P.', 'State of Rajasthan v. Vidhyavathi'],
+        correctAnswer: 1
+      },
+      {
+        id: 528,
+        topic: 'tort',
+        question: 'Animals dangerous by nature are classified as:',
+        options: ['Animals mansuetae naturae', 'Animals ferae naturae', 'Domestic animals', 'Scienter animals'],
+        correctAnswer: 1
+      },
+      {
+        id: 529,
+        topic: 'tort',
+        question: 'The test used to determine if a defendant is liable for consequences following a wrongful act is:',
+        options: ['Test of Directness', 'Test of Reasonable Foresight', 'Both A and B', 'Neither A nor B'],
+        correctAnswer: 2
+      },
+      {
+        id: 530,
+        topic: 'tort',
+        question: 'Which case established that "Directness" is no longer the sole test for remoteness, favoring "Reasonable Foresight"?',
+        options: ['Re Polemis', 'The Wagon Mound Case', 'Scott v. Shepherd', 'Smith v. London and South Western Railway'],
+        correctAnswer: 1
+      },
+      {
+        id: 531,
+        topic: 'tort',
+        question: 'Nervous shock caused by seeing or hearing an event is actionable if:',
+        options: ['It results in a "private frolic"', 'The injury was a reasonably foreseeable consequence', 'The plaintiff was a trespasser', 'No physical injury occurred'],
+        correctAnswer: 1
+      },
+      {
+        id: 532,
+        topic: 'tort',
+        question: '"Malicious Prosecution" requires the plaintiff to prove that the proceedings ended in:',
+        options: ['A conviction', 'Favour of the plaintiff', 'A settlement', 'A mistrial'],
+        correctAnswer: 1
+      },
+      {
+        id: 533,
+        topic: 'tort',
+        question: 'An unlawful interference with a person’s use or enjoyment of land is called:',
+        options: ['Trespass', 'Conversion', 'Nuisance', 'Detinue'],
+        correctAnswer: 2
+      },
+      {
+        id: 534,
+        topic: 'tort',
+        question: 'In "Trespass to Land," the entry must be:',
+        options: ['Intentional and without justification', 'Only by a person, not an object', 'Proven to have caused actual damage', 'Authorized by the owner'],
+        correctAnswer: 0
+      },
+      {
+        id: 535,
+        topic: 'tort',
+        question: '"Trespass ab initio" occurs when a person enters land lawfully but subsequently:',
+        options: ['Leaves immediately', 'Abuses the authority by committing a wrongful act', 'Pays the required fee', 'Corrects a mistake'],
+        correctAnswer: 1
+      },
+      {
+        id: 536,
+        topic: 'tort',
+        question: '"Distress Damage Feasant" allows an occupier of land to:',
+        options: ['Sue for liquidated damages', 'Seize trespassing cattle until compensation is paid', 'Imprison a trespasser', 'Sell the trespassing goods immediately'],
+        correctAnswer: 1
+      },
+      {
+        id: 537,
+        topic: 'tort',
+        question: '"Conversion" (Trover) involves:',
+        options: ['Direct physical interference with goods', 'Dealing with goods in a manner that deprives the owner of use/possession', 'Simply touching someone else\'s property', 'A breach of contract'],
+        correctAnswer: 1
+      },
+      {
+        id: 538,
+        topic: 'tort',
+        question: 'The maxim "Actio personalis moritur cum persona" means:',
+        options: ['A personal right of action dies with the person', 'The law is not concerned with small things', 'One who acts through another acts himself', 'Actionable without proof of damage'],
+        correctAnswer: 0
+      },
+      {
+        id: 539,
+        topic: 'tort',
+        question: '"Passing Off" is a tort designed to protect:',
+        options: ['Personal reputation', 'Commercial goodwill and business reputation', 'Private land from trespassers', 'Consumers from physical injury'],
+        correctAnswer: 1
+      },
+      {
+        id: 540,
+        topic: 'tort',
+        question: 'Which of the following is an "Extra-Judicial Remedy"?',
+        options: ['Damages', 'Injunction', 'Re-entry on land', 'Specific restitution of property'],
+        correctAnswer: 2
+      },
+
+      // Consumer Protection & Motor Vehicles Act
+      {
+        id: 541,
+        topic: 'consumer_law',
+        question: 'Under the Consumer Protection Act 1986, a "Consumer" does NOT include a person who:',
+        options: ['Hires services for a consideration', 'Purchases goods for resale or commercial purposes', 'Uses goods with the approval of the buyer', 'Purchases goods on a deferred payment basis'],
+        correctAnswer: 1
+      },
+      {
+        id: 542,
+        topic: 'consumer_law',
+        question: 'The "District Forum" has jurisdiction to entertain complaints where the value of goods/services does not exceed:',
+        options: ['Rupees five lakhs', 'Rupees ten lakhs', 'Rupees twenty lakhs', 'Rupees one crore'],
+        correctAnswer: 2
+      },
+      {
+        id: 543,
+        topic: 'consumer_law',
+        question: 'A "State Commission" can entertain complaints where the value exceeds 20 lakhs but does not exceed:',
+        options: ['50 lakhs', '1 crore', '2 crores', '5 crores'],
+        correctAnswer: 1
+      },
+      {
+        id: 544,
+        topic: 'consumer_law',
+        question: 'What is the limitation period for filing a complaint in a Consumer Forum?',
+        options: ['One year from the date of cause of action', 'Two years from the date of cause of action', 'Three years from the date of cause of action', 'Six months from the date of cause of action'],
+        correctAnswer: 1
+      },
+      {
+        id: 545,
+        topic: 'consumer_law',
+        question: 'Which of the following is a "Right of Consumers" under the Act?',
+        options: ['Right to Safety', 'Right to be Heard', 'Right to Consumer Education', 'All of the above'],
+        correctAnswer: 3
+      },
+      {
+        id: 546,
+        topic: 'consumer_law',
+        question: 'Section 140 of the Motor Vehicles Act 1988 provides for liability on the principle of:',
+        options: ['Fault liability', 'No-fault liability', 'Vicarious liability', 'Strict liability'],
+        correctAnswer: 1
+      },
+      {
+        id: 547,
+        topic: 'consumer_law',
+        question: 'Under Section 140, the fixed compensation for "death" in a motor accident is:',
+        options: ['Rs. 25,000', 'Rs. 50,000', 'Rs. 1,00,000', 'Rs. 15,000'],
+        correctAnswer: 1
+      },
+      {
+        id: 548,
+        topic: 'consumer_law',
+        question: 'In which chapter of the Motor Vehicles Act 1988 is "compulsory insurance" against third-party risks mentioned?',
+        options: ['Chapter X', 'Chapter XI', 'Chapter XII', 'Chapter XIII'],
+        correctAnswer: 1
+      },
+      {
+        id: 549,
+        topic: 'consumer_law',
+        question: 'An application for compensation in motor accidents is made to the:',
+        options: ['District Court', 'MACT (Motor Accidents Claims Tribunal)', 'Consumer Forum', 'High Court'],
+        correctAnswer: 1
+      },
+      {
+        id: 550,
+        topic: 'consumer_law',
+        question: 'Claims under Section 163A of the Motor Vehicles Act are based on:',
+        options: ['Proof of negligence of the driver', 'A structured formula basis', 'The absolute discretion of the Judge', 'The income of the driver'],
+        correctAnswer: 1
+      },
+      {
+        "id": 601,
+        "topic": "constitutional",
+        "question": "On which date did the Constitution of free India come into force?",
+        "options": [
+          "15th August 1947",
+          "26th November 1949",
+          "26th January 1950",
+          "30th January 1948"
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 602,
+        "topic": "constitutional",
+        "question": "Who was the President of the Constituent Assembly that signed the Indian Constitution?",
+        "options": [
+          "Dr B.R. Ambedkar",
+          "Dr Rajendra Prasad",
+          "Jawaharlal Nehru",
+          "Sardar Vallabhbhai Patel"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 603,
+        "topic": "constitutional",
+        "question": "Originally, the Indian Constitution consisted of how many Articles and Schedules?",
+        "options": [
+          "395 Articles and 8 Schedules",
+          "465 Articles and 12 Schedules",
+          "448 Articles and 10 Schedules",
+          "395 Articles and 12 Schedules"
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 604,
+        "topic": "constitutional",
+        "question": "From which Constitution did the Indian framers adopt the idea of Directive Principles of State Policy?",
+        "options": [
+          "American Constitution",
+          "Constitution of Ireland",
+          "British Constitution",
+          "German Reich Constitution"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 605,
+        "topic": "constitutional",
+        "question": "Which case established that the Preamble is a part of the Indian Constitution?",
+        "options": [
+          "Re Berubari case",
+          "Kesavananda Bharati v. State of Kerala",
+          "A.K. Gopalan v. State of Madras",
+          "Excel Wear v. Union of India"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 606,
+        "topic": "constitutional",
+        "question": "The words \"Socialist\" and \"Secular\" were inserted into the Preamble by which Amendment?",
+        "options": [
+          "24th Amendment Act, 1971",
+          "44th Amendment Act, 1978",
+          "42nd Amendment Act, 1976",
+          "86th Amendment Act, 2002"
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 607,
+        "topic": "constitutional",
+        "question": "In a Republic, the head of the State is not a hereditary monarch but a person elected for a:",
+        "options": [
+          "Life term",
+          "Fixed term",
+          "Term of 10 years",
+          "Period at the pleasure of the Parliament"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 608,
+        "topic": "constitutional",
+        "question": "Which part of the Constitution is regarded as its 'soul'?",
+        "options": [
+          "Fundamental Rights",
+          "Directive Principles of State Policy",
+          "The Preamble",
+          "Fundamental Duties"
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 609,
+        "topic": "constitutional",
+        "question": "Article 1 of the Constitution declares that India shall be a:",
+        "options": [
+          "Federation of States",
+          "Union of States",
+          "Association of States",
+          "Confederation of States"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 610,
+        "topic": "constitutional",
+        "question": "Which Article empowers the Parliament to form new States and alter the boundaries of existing States?",
+        "options": [
+          "Article 1",
+          "Article 2",
+          "Article 3",
+          "Article 4"
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 611,
+        "topic": "constitutional",
+        "question": "Does the power of Parliament to diminish the area of a State under Article 3 include the power to cede Indian territory to a foreign state?",
+        "options": [
+          "Yes, by a simple majority",
+          "No, it requires a Constitutional Amendment under Article 368",
+          "Yes, with the consent of the affected State",
+          "No, Indian territory can never be ceded"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 612,
+        "topic": "constitutional",
+        "question": "Which part of the Constitution deals with Citizenship?",
+        "options": [
+          "Part I",
+          "Part II",
+          "Part III",
+          "Part IV"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 613,
+        "topic": "constitutional",
+        "question": "To acquire citizenship by domicile at the commencement of the Constitution, a person must have been an ordinary resident in India for not less than:",
+        "options": [
+          "Two years",
+          "Five years",
+          "Seven years",
+          "Ten years"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 614,
+        "topic": "constitutional",
+        "question": "Under Article 9, a person ceases to be a citizen of India if they voluntarily acquire the citizenship of:",
+        "options": [
+          "A neighbouring country",
+          "Any foreign state",
+          "A commonwealth country",
+          "A state within the Union"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 615,
+        "topic": "constitutional",
+        "question": "Which Act provides for the acquisition and termination of citizenship after the commencement of the Constitution?",
+        "options": [
+          "The Representation of the People Act, 1951",
+          "The Citizenship Act, 1955",
+          "The Foreigners Act, 1946",
+          "The Passports Act, 1967"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 616,
+        "topic": "constitutional",
+        "question": "\"Termination\" of citizenship occurs when a citizen of India voluntarily acquires the citizenship of:",
+        "options": [
+          "Another country",
+          "A United Nations territory",
+          "A state within India",
+          "An enemy country during war"
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 617,
+        "topic": "constitutional",
+        "question": "Fundamental Rights are enshrined in which part of the Constitution?",
+        "options": [
+          "Part II",
+          "Part III",
+          "Part IV",
+          "Part IVA"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 618,
+        "topic": "constitutional",
+        "question": "Which document from 1214 is the first written document relating to the fundamental rights of citizens?",
+        "options": [
+          "Bill of Rights",
+          "Declaration of the Rights of Man",
+          "Magna Carta",
+          "American Constitution"
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 619,
+        "topic": "constitutional",
+        "question": "Under Article 12, the term 'State' includes which of the following?",
+        "options": [
+          "The Central Government and Parliament",
+          "The State Governments and Legislatures",
+          "All local or other authorities",
+          "All of the above"
+        ],
+        "correctAnswer": 3
+      },
+      {
+        "id": 620,
+        "topic": "constitutional",
+        "question": "Which case established that the International Airports Authority is 'State' within the meaning of Article 12?",
+        "options": [
+          "Ajay Hasia v. Khalid Mujib",
+          "R.D. Shetty v. International Airports Authority of India",
+          "Som Prakash v. Union of India",
+          "Sukhdev Singh v. Bhagatram"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 621,
+        "topic": "constitutional",
+        "question": "Laws inconsistent with Fundamental Rights are declared void under which Article?",
+        "options": [
+          "Article 12",
+          "Article 13",
+          "Article 14",
+          "Article 32"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 622,
+        "topic": "constitutional",
+        "question": "The \"Doctrine of Eclipse\" applies to which type of laws?",
+        "options": [
+          "Post-constitutional laws only",
+          "Pre-constitutional laws only",
+          "Both Pre and Post-constitutional laws",
+          "Laws made by foreign states"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 623,
+        "topic": "constitutional",
+        "question": "Article 14 guarantees which two concepts of equality?",
+        "options": [
+          "Equality of status and opportunity",
+          "Equality before the law and Equal protection of the laws",
+          "Social and economic equality",
+          "Political and legal equality"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 624,
+        "topic": "constitutional",
+        "question": "The concept of \"Equality before law\" is a corollary of Dicey’s concept of:",
+        "options": [
+          "Separation of Powers",
+          "Rule of Law",
+          "Parliamentary Sovereignty",
+          "Natural Justice"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 625,
+        "topic": "constitutional",
+        "question": "Reasonable classification under Article 14 must be founded on an:",
+        "options": [
+          "Absolute distinction",
+          "Intelligible differentia",
+          "Arbitrary selection",
+          "Individual's status"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 626,
+        "topic": "constitutional",
+        "question": "Article 15 prohibits discrimination by the State against citizens on grounds ONLY of:",
+        "options": [
+          "Religion, race, caste, sex, place of birth or any of them",
+          "Language and culture",
+          "Residence and domicile",
+          "Wealth and education"
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 627,
+        "topic": "constitutional",
+        "question": "Which Article empowers the State to make special provisions for women and children?",
+        "options": [
+          "Article 14",
+          "Article 15(3)",
+          "Article 16(2)",
+          "Article 17"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 628,
+        "topic": "constitutional",
+        "question": "Article 16 guarantees equality of opportunity in matters of:",
+        "options": [
+          "Social status",
+          "Religious practice",
+          "Public employment",
+          "Private contracts"
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 629,
+        "topic": "constitutional",
+        "question": "In the \"Mandal Commission Case\" (Indra Sawhney v. Union of India), the Supreme Court held that the maximum limit of reservation cannot exceed:",
+        "options": [
+          "27%",
+          "33%",
+          "50%",
+          "69%"
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 630,
+        "topic": "constitutional",
+        "question": "Which Article abolishes \"Untouchability\" and forbids its practice in any form?",
+        "options": [
+          "Article 16",
+          "Article 17",
+          "Article 18",
+          "Article 19"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 631,
+        "topic": "constitutional",
+        "question": "Under Article 18, the State is prohibited from conferring any titles EXCEPT:",
+        "options": [
+          "Political titles",
+          "Religious titles",
+          "Military and Academic distinctions",
+          "Noble titles"
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 632,
+        "topic": "constitutional",
+        "question": "How many freedoms are currently guaranteed to citizens under Article 19(1)?",
+        "options": [
+          "Five",
+          "Six",
+          "Seven",
+          "Eight"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 633,
+        "topic": "constitutional",
+        "question": "Which freedom was omitted by the 44th Amendment Act, 1978?",
+        "options": [
+          "Freedom of assembly",
+          "Freedom of movement",
+          "Right to acquire, hold and dispose of property",
+          "Freedom of profession"
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 634,
+        "topic": "constitutional",
+        "question": "Freedom of speech and expression includes the \"freedom of press\" as per which case?",
+        "options": [
+          "Romesh Thapper v. State of Madras",
+          "Brij Bhushan v. State of Delhi",
+          "Express Newspaper v. Union of India",
+          "All of the above"
+        ],
+        "correctAnswer": 3
+      },
+      {
+        "id": 635,
+        "topic": "constitutional",
+        "question": "The \"National Anthem Case\" (Bijoe Emmanuel v. State of Kerala) involved the right to:",
+        "options": [
+          "Freedom of Press",
+          "Freedom of Silence",
+          "Freedom of Association",
+          "Freedom of Movement"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 636,
+        "topic": "constitutional",
+        "question": "Reasonable restrictions on the freedom of speech and expression can be imposed in the interest of:",
+        "options": [
+          "Sovereignty and integrity of India",
+          "Security of the State",
+          "Public order, decency or morality",
+          "All of the above"
+        ],
+        "correctAnswer": 3
+      },
+      {
+        "id": 637,
+        "topic": "constitutional",
+        "question": "Article 20(2) embodies the common law rule of \"nemo debet vis vexari,\" which protects against:",
+        "options": [
+          "Ex post facto law",
+          "Double Jeopardy",
+          "Self-incrimination",
+          "Arbitrary arrest"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 638,
+        "topic": "constitutional",
+        "question": "Protection against self-incrimination (Article 20(3)) means an accused cannot be compelled to:",
+        "options": [
+          "Give their name",
+          "Be a witness against themselves",
+          "Sign a bail bond",
+          "Undergo a physical medical exam"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 639,
+        "topic": "constitutional",
+        "question": "Article 21 guarantees that no person shall be deprived of his life or personal liberty except according to:",
+        "options": [
+          "Due process of law",
+          "Procedure established by law",
+          "Executive discretion",
+          "International treaties"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 640,
+        "topic": "constitutional",
+        "question": "In which landmark case did the Supreme Court hold that the procedure under Article 21 must be \"just, fair and reasonable\"?",
+        "options": [
+          "A.K. Gopalan case",
+          "Maneka Gandhi v. Union of India",
+          "Kharak Singh v. State of UP",
+          "Satwant Singh case"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 641,
+        "topic": "constitutional",
+        "question": "Every person who is arrested and detained in custody must be produced before the nearest Magistrate within a period of:",
+        "options": [
+          "12 hours",
+          "24 hours",
+          "48 hours",
+          "72 hours"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 642,
+        "topic": "constitutional",
+        "question": "Article 23 prohibits which of the following practices?",
+        "options": [
+          "Untouchability",
+          "Traffic in human beings and 'begar' (forced labour)",
+          "Child labour in factories",
+          "Titles of nobility"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 643,
+        "topic": "constitutional",
+        "question": "Article 24 prohibits the employment of children below the age of 14 years in:",
+        "options": [
+          "Schools",
+          "Innocent or harmless jobs",
+          "Factories and hazardous employment",
+          "Agriculture"
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 644,
+        "topic": "constitutional",
+        "question": "Which Article grants the right to manage religious affairs to every religious denomination?",
+        "options": [
+          "Article 25",
+          "Article 26",
+          "Article 27",
+          "Article 28"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 645,
+        "topic": "constitutional",
+        "question": "Article 32 allows a person to move the Supreme Court for the enforcement of Fundamental Rights through which mechanism?",
+        "options": [
+          "Appeals",
+          "Review petitions",
+          "Writs",
+          "Public meetings"
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 646,
+        "topic": "constitutional",
+        "question": "The writ of \"Quo Warranto\" is issued to:",
+        "options": [
+          "Command a public duty",
+          "Release a person from illegal detention",
+          "Challenge the legality of a person holding a public office",
+          "Quash the order of an inferior court"
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 647,
+        "topic": "constitutional",
+        "question": "Directive Principles of State Policy are contained in which part of the Constitution?",
+        "options": [
+          "Part III",
+          "Part IV",
+          "Part IVA",
+          "Part V"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 648,
+        "topic": "constitutional",
+        "question": "How many Fundamental Duties are currently listed for citizens under Article 51A?",
+        "options": [
+          "Ten",
+          "Eleven",
+          "Twelve",
+          "Nine"
+        ],
+        "correctAnswer": 1
       }
     ]
   }

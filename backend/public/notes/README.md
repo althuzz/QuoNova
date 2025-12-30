@@ -43,18 +43,18 @@ After adding the file, you can verify it's accessible by:
    - (Note: Spaces in URLs are encoded as %20)
 
 ## Current Files in Directory
-- Constitutional_Law_1.pdf ✓ (Already present)
-- Law Of Contracts 1-Anil K Nair.pdf ✓ (Added)
-- Family Law 1-Anil K Nair.pdf ⏳ (To be added)
-- BNS ANIL K NAIR.pdf ⏳ (To be added)
-- Law of Torts-Anil K Nair.pdf ⏳ (To be added)
-- Legal Language & Legal Writing-Anil K Nair.pdf ⏳ (To be added)
-- Contracts_PYQ_2023.pdf ⏳ (Optional - Previous Year Paper)
-- Contracts_PYQ_2022.pdf ⏳ (Optional - Previous Year Paper)
-- Family_Law_PYQ_2023.pdf ⏳ (Optional - Previous Year Paper)
-- Crimes_PYQ_2023.pdf ⏳ (Optional - Previous Year Paper)
-- Torts_PYQ_2023.pdf ⏳ (Optional - Previous Year Paper)
-- Legal_Lang_PYQ_2023.pdf ⏳ (Optional - Previous Year Paper)
+- Constitutional_Law_1.pdf - [Present]
+- Law Of Contracts 1-Anil K Nair.pdf - [Present]
+- Family Law 1-Anil K Nair.pdf - [Present]
+- BNS ANIL K NAIR.pdf - [Present]
+- Law of Torts-Anil K Nair.pdf - [Present]
+- Legal Language & Legal Writing-Anil K Nair.pdf - [Present]
+- Contracts_PYQ_2023.pdf - [Present]
+- Contracts_PYQ_2022.pdf - [Present]
+- Family_Law_PYQ_2023.pdf - [Present]
+- Crimes_PYQ_2023.pdf - [Present]
+- Torts_PYQ_2023.pdf - [Present]
+- Legal_Lang_PYQ_2023.pdf - [Present]
 
 ## Notes
 - The server automatically serves files from this directory via the `/public` route
